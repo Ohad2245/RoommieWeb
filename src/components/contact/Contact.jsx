@@ -9,17 +9,14 @@ import { BsWhatsapp } from "react-icons/bs";
 import "./contact.css";
 import emailjs from "emailjs-com";
 import { useRef } from "react";
-import { Button } from "@mui/material";
-
 
 function Contact() {
-
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_uama4xr",
+      "service_rsz4p62",
       "template_kf8z3kc",
       form.current,
       "KQZ1FUigy-wCZY0js"
@@ -37,9 +34,9 @@ function Contact() {
     >
       <TypingText title="| Get In Touch" textStyles="text-center" />
       <TitleText title="Contact Me" textStyles="text-center" />
-      <div className="container contact__container reveal">
-        <div className="contact__options reveal">
-          <article className="contact__option reveal">
+      <div className="container contact__container">
+        <div className="contact__options">
+          <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>ohad909881122@gmail.com</h5>
@@ -83,18 +80,26 @@ function Contact() {
             type="text"
             name="name"
             placeholder="Your Full Name"
+            className="text-white"
             required
           />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            className="text-white"
+            required
+          />
           <textarea
             name="message"
             rows="7"
             placeholder="Your Message"
+            className="text-white"
             required
           ></textarea>
-          <Button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
             Send Message
-          </Button>
+          </button>
         </form>
       </div>
     </motion.div>

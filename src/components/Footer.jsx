@@ -39,36 +39,44 @@ const Footer = () => (
             Copyright © 2022 - Roommie. All right reserved
           </p>
           <div>
-          <Button className="gap-2">
-            <a
-              href="https://www.facebook.com/profile.php?id=100000848391807"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="/twitter.svg" />
-            </a>
-          </Button>
-          <Button>
-            <a
-              href="https://www.linkedin.com/in/ohad-cohen-6b2393211/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="/linkedin.svg" />
-            </a>
-          </Button>
-          <Button>
-            <img src="/instagram.svg" />
-          </Button>
-          <Button>
-            <a
-              href="https://www.facebook.com/profile.php?id=100000848391807"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="/facebook.svg" />
-            </a>
-          </Button>
+            <Button className="gap-2">
+              <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                <img src="/twitter-icon.png" width="27" height="20" />
+              </a>
+            </Button>
+            <Button>
+              <a
+                href="https://www.linkedin.com/company/roommie/about/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/800px-Linkedin_icon.svg.png"
+                  width="27"
+                  height="20"
+                />
+              </a>
+            </Button>
+
+            <Button>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+              <img src="/instagram-icon.png" width="27" height="20" />
+              </a>
+            </Button>
+
+            <Button>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/2021_Facebook_icon.svg.png" width="27" height="20" />
+              </a>
+            </Button>
           </div>
         </div>
       </div>

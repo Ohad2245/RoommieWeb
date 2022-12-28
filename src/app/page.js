@@ -1,5 +1,6 @@
-import { Footer, Navbar } from '../components';
-import Contact from '../components/contact/Contact';
+import { Footer, Navbar } from "../components";
+import Contact from "../components/contact/Contact";
+import Testimonials from "../components/testimonials/Testimonials";
 import {
   About,
   Explore,
@@ -9,11 +10,11 @@ import {
   Insights,
   WhatsNew,
   World,
-} from '../screens';
+} from "../screens";
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
-    <Navbar />
+    <Navbar/>
     <Hero />
     <div className="relative">
       <About />
@@ -32,12 +33,12 @@ const Page = () => (
       <Feedback />
     </div>
     <div className="relative">
-    <Contact />
-    <div className="gradient-04 z-0" />
+      <Contact />
+      <div className="gradient-04 z-0" />
     </div>
+    <Testimonials/>
     <Footer />
   </div>
-  
 );
 
 export default Page;

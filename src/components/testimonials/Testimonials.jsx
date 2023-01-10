@@ -37,7 +37,7 @@ function Testimonials() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewpost={{ once: false, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
       <TitleText title="Review a look at the team " textStyles="text-center" />
@@ -53,12 +53,12 @@ function Testimonials() {
       >
         {data.map(({ avatar, name, review }, index) => {
           return (
-            <SwiperSlide key={index} className="testimonials">
-              <div class="friend__avatar">
+            <SwiperSlide key={index} className="bg-indigo-900	text-center p-8 rounded-3xl select-none">
+              <div className="friend__avatar">
                 <img src={avatar} alt=""/>
               </div>
-              <h5 className="friend__name">{name}</h5>
-              <small className="friend__review">{review}</small>
+              <h5 className="font-bold text-white">{name}</h5>
+              <small className="text-neutral-200 font-thin block w-100 m-2">{review}</small>
             </SwiperSlide>
           );
         })}

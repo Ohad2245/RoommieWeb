@@ -8,6 +8,9 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import { MdRestaurantMenu } from "react-icons/md";
 import NavLinks from "./navLinks/NavLinks";
+import AuthModal from "./Authentication/AuthModal";
+import { CryptoState } from "../CryptoContext";
+import UserSideBar from "./Authentication/UserSideBar";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -53,7 +56,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 function Navbar() {
-  /*********/
+
+  const {user} = CryptoState();
   const [active, setActive] = useState(false);
 
   const humburger = (
@@ -74,7 +78,6 @@ function Navbar() {
   );
 
   return (
-    
     <motion.nav
       variants={navVariants}
       initial="hidden"
@@ -107,11 +110,14 @@ function Navbar() {
         <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
           Roommie
         </h2>
-        {active ? closeIcon : humburger}
-        {active && <NavLinks/>}
+        {/* {active ? closeIcon : humburger}
+        {active && <NavLinks/>} */}
+        {user ? <UserSideBar/> : <AuthModal/>}
+
 
       </div>
     </motion.nav>
+
   );
 }
 

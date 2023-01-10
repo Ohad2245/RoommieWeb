@@ -1,5 +1,6 @@
 
 import { motion } from 'framer-motion';
+import AuthModal from '../components/Authentication/AuthModal';
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 

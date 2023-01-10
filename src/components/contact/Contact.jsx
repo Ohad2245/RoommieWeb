@@ -29,7 +29,7 @@ function Contact() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewpost={{ once: false, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
       <TypingText title="| Get In Touch" textStyles="text-center" />

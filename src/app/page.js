@@ -1,6 +1,6 @@
 import { Footer, Navbar } from "../components";
-import Contact from "../components/contact/Contact";
 import Testimonials from "../components/testimonials/Testimonials";
+import Contact from "../components/contact/Contact";
 import {
   About,
   Explore,
@@ -11,6 +11,7 @@ import {
   WhatsNew,
   World,
 } from "../screens";
+import Alert from '../components/Alert';
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
@@ -38,6 +39,7 @@ const Page = () => (
     </div>
     <Testimonials/>
     <Footer />
+    <Alert/>
   </div>
 );
 

@@ -3,12 +3,19 @@ import ReactDOM from 'react-dom/client';
 import Page from './app/page';
 import reportWebVitals from './reportWebVitals';
 import './styles/globals.css';
+import {BrowserRouter} from 'react-router-dom';
+import CryptoContext from './CryptoContext';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <CryptoContext>
   <React.StrictMode>
+  <BrowserRouter>
     <Page/>
+    </BrowserRouter>
   </React.StrictMode>
+  </CryptoContext>
 );
 
 reportWebVitals();

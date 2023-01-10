@@ -34,15 +34,6 @@ const useStyles = makeStyles((theme) => ({
     gap: 20,
     fontSize: 20,
   },
-  google:{
-    padding:24,
-    paddingTop:0,
-    display:'flex',
-    flexDirection: 'column',
-    textAlign:'center',
-    gap:20,
-    fontSize:20,
-  }
 }));
 
 export default function AuthModal() {

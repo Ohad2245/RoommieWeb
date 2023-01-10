@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { navVariants } from "../utils/motion";
@@ -6,8 +6,8 @@ import { Box } from "@mui/system";
 import { Toolbar } from "@mui/material";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
-import { MdRestaurantMenu } from "react-icons/md";
-import NavLinks from "./navLinks/NavLinks";
+// import { MdRestaurantMenu } from "react-icons/md";
+// import NavLinks from "./navLinks/NavLinks";
 import AuthModal from "./Authentication/AuthModal";
 import { CryptoState } from "../CryptoContext";
 import UserSideBar from "./Authentication/UserSideBar";
@@ -58,24 +58,24 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 function Navbar() {
 
   const {user} = CryptoState();
-  const [active, setActive] = useState(false);
+  // const [active, setActive] = useState(false);
 
-  const humburger = (
-    <img
-      src="/menu.svg"
-      alt="menu"
-      className="w-[24px] h-[24px] object-contain"
-      onClick={() => setActive(!active)}
-    />
-  );
+  // const humburger = (
+  //   <img
+  //     src="/menu.svg"
+  //     alt="menu"
+  //     className="w-[24px] h-[24px] object-contain"
+  //     onClick={() => setActive(!active)}
+  //   />
+  // );
 
-  const closeIcon = (
-    <MdRestaurantMenu
-      size="25px"
-      color="white"
-      onClick={() => setActive(!active)}
-    />
-  );
+  // const closeIcon = (
+  //   <MdRestaurantMenu
+  //     size="25px"
+  //     color="white"
+  //     onClick={() => setActive(!active)}
+  //   />
+  // );
 
   return (
     <motion.nav

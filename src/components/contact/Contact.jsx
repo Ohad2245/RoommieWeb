@@ -5,7 +5,6 @@ import { staggerContainer } from "../../utils/motion";
 import styles from "../../styles";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
-import { BsWhatsapp } from "react-icons/bs";
 import "./contact.css";
 import emailjs from "emailjs-com";
 import { useRef } from "react";
@@ -32,7 +31,7 @@ function Contact() {
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| Get In Touch" textStyles="text-center" />
+      <TypingText title="Get In Touch" textStyles="text-center" />
       <TitleText title="Contact Me" textStyles="text-center" />
       <div className="container contact__container">
         <div className="contact__options">
@@ -63,7 +62,7 @@ function Contact() {
           </article>
 
           <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
+          <RiMessengerLine className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>050-909-8812</h5>
             <a

@@ -15,12 +15,12 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| About Roommie" textStyles="text-center" />
+      <TypingText title="About Roommie" textStyles="text-center" />
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
+        className="mt-[8px] font-normal sm:text-[30px] text-[16px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-white">Roommie </span>
+        <span className="font-extrabold text-white ">Roommie</span><br></br>
         "If today in 2022 you can find a relationship and love through an app, why can't you likewise find an apartment or roommates through an app?"- Eliyahu Yifrach
         Hi,
         We've all heard stories from our friends and family about finding roommates and or apartments here in Israel. Some of us have even experienced the struggle ourselves on numerous occasions; the feeling of endless scrolling on WhatsApp, Yad2, and the plethora of Facebook groups. 

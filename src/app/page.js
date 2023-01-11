@@ -35,9 +35,8 @@ const Page = () => (
     </div>
     <div className="relative">
       <Contact />
-      <div className="gradient-04 z-0" />
-    </div>
     <Testimonials/>
+    </div>
     <Footer />
     <Alert/>
   </div>

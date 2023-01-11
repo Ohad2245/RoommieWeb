@@ -3,33 +3,47 @@ import { staggerContainer } from "../../utils/motion";
 import { motion } from "framer-motion";
 import { TitleText, TypingText } from "../CustomTexts";
 import styles from "../../styles";
-import './testimonials.css';
+import "./testimonials.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from 'swiper';
+import { Pagination } from "swiper";
 
 const data = [
-    {
-      avatar: '/roy.jpg',
-      name: "Shoval Soli",
-      review:
-        "Ohad has an excellent ability in solving complex code problems, even in many different types of code.A guy with a particularly high academic ability, an excellent partner for the development team",
-    },
-    {
-      avatar: '/shay.jpeg',
-      name: "Roy Elshtein",
-      review:
-        "Ohad is at first, a wonderful, kind and fun person to work with.Ohad has a high work ethic, committed to learning and improving his level of expertise within the organization. I felt calm and had complete trust while we worked together.",
-    },
-    {
-      avatar: '/shay.jpeg',
-      name: "Shay Gali",
-      review:
-        "From my acquaintance with Ohad, he is a serious and responsible person, he loves to help others and he is not afraid of challenges even from the most difficult.",
-    },
-  ];
+  {
+    avatar: "/Eliyahu.jpeg",
+    name: "Eliyahu Yifrach",
+    title: "Founder | CEO of Roommie",
+    review:""
+  },
+  {
+    avatar: "/Ohad.jpeg",
+    name: "Ohad Cohen",
+    title: "CTO | Fullstack Developer",
+    review:""
+  },
+  {
+    avatar: "/Yonatan.jpeg",
+    name: "Yonatan Yavin",
+    title: "Backend Developer",
+    review:
+      "Computer Engineering graduate with strong skills in C, C++, Java, Python. Specializing in embedded systems and software engineering",
+  },
+  {
+    avatar: "/Liat.jpeg",
+    name: "Liat Shear",
+    title: "Frontend Developer",
+    review: "Computer Science Student",
+  },
+  {
+    avatar: "/Omer.jpeg",
+    name: "Omer Dayan",
+    title: "Backend Developer",
+    review: `Over the past few years, I've learned a lot about programming in C++ and Python.
+        I carried out interesting projects, I gave programming lessons to students and friends.`,
+  },
+];
 
 function Testimonials() {
   return (
@@ -51,19 +65,26 @@ function Testimonials() {
         slidesPerView={1}
         pagination={{ clickable: true }}
       >
-        {data.map(({ avatar, name, review }, index) => {
+        {data.map(({ avatar, name, review, title }, index) => {
           return (
-            <SwiperSlide key={index} className="bg-indigo-900	text-center p-8 rounded-3xl select-none">
+            <SwiperSlide
+              key={index}
+              className="bg-indigo-900	text-center p-8 rounded-3xl select-none"
+            >
               <div className="friend__avatar">
-                <img src={avatar} alt=""/>
+                <img src={avatar} alt="" />
               </div>
-              <h5 className="font-bold text-white">{name}</h5>
-              <small className="text-neutral-200 font-thin block w-100 m-2">{review}</small>
+              <h2 className="font-bold text-white">{name}</h2>
+              <h4 className="text-stone-300	 font-thin block w-100 m-2">
+                {title}
+              </h4>
+              <small className="text-neutral-100 font-thin block w-100 m-2">
+                {review}
+              </small>
             </SwiperSlide>
           );
         })}
       </Swiper>
-
     </motion.div>
   );
 }

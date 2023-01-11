@@ -96,7 +96,7 @@ function Navbar() {
                 <img
                   src="/search.svg"
                   alt="search"
-                  className="w-[24px] h-[24px] object-contain"
+                  className="w-[24px] h-[24px] object-contain "
                 />
               </SearchIconWrapper>
               <StyledInputBase

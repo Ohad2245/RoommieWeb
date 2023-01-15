@@ -43,6 +43,13 @@ const data = [
     review: `Over the past few years, I've learned a lot about programming in C++ and Python.
         I carried out interesting projects, I gave programming lessons to students and friends.`,
   },
+  {
+    avatar: "/Omer.jpeg",
+    name: "Yael Gargir",
+    title: "CMO",
+    review: `Over the past few years, I've learned a lot about programming in C++ and Python.
+        I carried out interesting projects, I gave programming lessons to students and friends.`,
+  },
 ];
 
 function Testimonials() {

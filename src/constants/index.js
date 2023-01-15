@@ -27,9 +27,9 @@ export const exploreWorlds = [
 ];
 
 export const startingFeatures = [
-  'Register for the application and define what you are looking for',
-  'Receive offers in exact percentages according to your requirement',
-  'Get a quote, make an agreement with the apartment owner and save tens of thousands of shekels',
+  "Create a profile and tell us what you're looking for",
+  "Filter and sort the relevant results the way that suits you",
+  "Set up times to see apartments in a convenient order",
 ];
 
 export const newFeatures = [

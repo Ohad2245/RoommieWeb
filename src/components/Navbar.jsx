@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { navVariants } from "../utils/motion";
@@ -6,11 +6,9 @@ import { Box } from "@mui/system";
 import { Toolbar } from "@mui/material";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
-// import { MdRestaurantMenu } from "react-icons/md";
-// import NavLinks from "./navLinks/NavLinks";
-import AuthModal from "./Authentication/AuthModal";
-import { CryptoState } from "../CryptoContext";
-import UserSideBar from "./Authentication/UserSideBar";
+import NavLinks from "./navLinks/NavLinks";
+// import { CryptoState } from "../CryptoContext";
+import { MdRestaurantMenu } from "react-icons/md";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -57,25 +55,25 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 function Navbar() {
 
-  const {user} = CryptoState();
-  // const [active, setActive] = useState(false);
+  // const {user} = CryptoState();
+  const [active, setActive] = useState(false);
 
-  // const humburger = (
-  //   <img
-  //     src="/menu.svg"
-  //     alt="menu"
-  //     className="w-[24px] h-[24px] object-contain"
-  //     onClick={() => setActive(!active)}
-  //   />
-  // );
+  const humburger = (
+    <img
+      src="/menu.svg"
+      alt="menu"
+      className="w-[24px] h-[24px] object-contain"
+      onClick={() => setActive(!active)}
+    />
+  );
 
-  // const closeIcon = (
-  //   <MdRestaurantMenu
-  //     size="25px"
-  //     color="white"
-  //     onClick={() => setActive(!active)}
-  //   />
-  // );
+  const closeIcon = (
+    <MdRestaurantMenu
+      size="25px"
+      color="white"
+      onClick={() => setActive(!active)}
+    />
+  );
 
   return (
     <motion.nav
@@ -107,12 +105,12 @@ function Navbar() {
           </Toolbar>
           
         </Box>
-        <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
+        <h2 className="font-extrabold text-[24px] leading-[30px] text-white text-center">
           Roommie
         </h2>
-        {/* {active ? closeIcon : humburger}
-        {active && <NavLinks/>} */}
-        {user ? <UserSideBar/> : <AuthModal/>}
+        {active ? closeIcon : humburger}
+        {active && <NavLinks/>}
+        {/* {user ? <UserSideBar/> : <AuthModal/>} */}
 
 
       </div>

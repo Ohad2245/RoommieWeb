@@ -51,7 +51,7 @@ function Contact() {
           <article className="contact__option">
             <RiMessengerLine className="contact__option-icon" />
             <h4>Messenger</h4>
-            <h5>OhadCohen</h5>
+            <h5>Eliyahu Yifrach</h5>
             <a
               href="https://m.me/100000848391807"
               target="_blank"

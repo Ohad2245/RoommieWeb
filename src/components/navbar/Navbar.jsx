@@ -1,14 +1,15 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import styles from "../styles";
-import { navVariants } from "../utils/motion";
+import styles from "../../styles";
+import { navVariants } from "../../utils/motion";
 import { Box } from "@mui/system";
 import { Toolbar } from "@mui/material";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
-import NavLinks from "./navLinks/NavLinks";
+import NavLinks from "../navLinks/NavLinks";
 // import { CryptoState } from "../CryptoContext";
 import { MdRestaurantMenu } from "react-icons/md";
+import "./navbar.css";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -54,7 +55,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 function Navbar() {
-
   // const {user} = CryptoState();
   const [active, setActive] = useState(false);
 
@@ -86,7 +86,6 @@ function Navbar() {
       <div
         className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
       >
-        
         <Box className="w-[24px] h-[24px] object-contain">
           <Toolbar>
             <Search>
@@ -103,19 +102,30 @@ function Navbar() {
               />
             </Search>
           </Toolbar>
-          
         </Box>
-        <h2 className="font-extrabold text-[24px] leading-[30px] text-white text-center">
-          Roommie
-        </h2>
+
+        {/* <h2 className="font-thin text-[24px] leading-[30px] text-white text-center">
+          R O O M M I
+        </h2> */}
+        <div className="roommie font-thin text-[24px] leading-[30px] text-white text-center ">
+          <p>R</p>
+          <p>O</p>
+          <p>M</p>
+          <p>M</p>
+          <p>I</p>
+        
+          <div className="title grid gap-1 md:gap-1">
+          <div className="e"></div>
+          <div className="e"></div>
+          <div className="e"></div>
+        </div>
+        </div>
+
         {active ? closeIcon : humburger}
-        {active && <NavLinks/>}
+        {active && <NavLinks />}
         {/* {user ? <UserSideBar/> : <AuthModal/>} */}
-
-
       </div>
     </motion.nav>
-
   );
 }
 

@@ -1,13 +1,13 @@
-.grid-container {
+/* .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
-  
+    
 }
 .grid-item{
     display: grid;
     justify-content: center;
     align-content: center;
+
 }
 .grid-item1 {
   background-color: gold;
@@ -53,7 +53,19 @@
   grid-column: 2;
   grid-row: 4;
   height: 180px;
+  font-size:40px;
 
+
+}
+.grid-item5:hover {
+  font-size:0;
+}
+.grid-item5:hover::after{
+  content:attr(data-hover);
+  font-size:20px;
+  line-height: 28px;
+  font-weight: 200;
+  text-align: center;
 }
 .grid-item6 {
   background-color: rgb(158, 132, 146);
@@ -75,9 +87,98 @@
 }
 .grid-item7:hover::after{
     content:attr(data-hover);
-    font-size:16px;
+    font-size:13px;
     line-height: 28px;
     font-weight: 200;
     text-align: center;
 }
+ */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  justify-content: center;
+  align-content: center;
+  
+}
+.grid-item{
+  display:grid;
+  justify-content: center;
+  align-content: center;
+}
+.grid-item1 {
+  background: rgb(2,0,36);
+  background-image: radial-gradient(rgb(224, 81, 81), rgba(255, 255, 0, 0.789));
+  font-weight: 700;
+
+}
+.item1-p{
+  transform: rotate(-90deg);
+
+}
+.grid-item1:hover {
+  font-size:0;
+
+}
+.grid-item1:hover::after{
+  content:attr(data-hover);
+  font-size:18px;
+  line-height: 28px;
+  font-weight: 200;
+  text-align: center;
+  
+  }
+
+.grid-item2 {
+  background-color: rgb(0, 242, 255);
+
+}
+.grid-item2:hover {
+  font-size:0;
+}
+.grid-item2:hover::after{
+  content:attr(data-hover);
+  font-size:13px;
+  line-height: 28px;
+  font-weight: 200;
+  text-align: center;
+}
+.grid-item3 {
+  background-color: rgb(0, 162, 255);
+}
+.grid-item4 {
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);}
+
+.grid-item5 {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,109,121,1) 35%, rgba(0,212,255,1) 100%); 
+  color:white;
+  font-size:24px;
+}
+
+.grid-item5:hover {
+  font-size:0;
+}
+.grid-item5:hover::after{
+  content:attr(data-hover);
+  font-size:13px;
+  line-height: 28px;
+  font-weight: 200;
+  text-align: center;
+}
+.grid-item7 {
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(255,0,0,1) 0%, rgba(252,176,69,1) 100%);}
+.grid-item7:hover {
+  font-size:0;
+}
+.grid-item7:hover::after{
+  content:attr(data-hover);
+  font-size:13px;
+  line-height: 28px;
+  font-weight: 200;
+  text-align: center;
+}
+
 

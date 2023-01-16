@@ -110,6 +110,7 @@ function Navbar() {
         <div className="roommie font-thin text-[24px] leading-[30px] text-white text-center ">
           <p>R</p>
           <p>O</p>
+          <p>O</p>
           <p>M</p>
           <p>M</p>
           <p>I</p>

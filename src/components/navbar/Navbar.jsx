@@ -7,7 +7,7 @@ import { Box } from "@mui/system";
 import { Toolbar } from "@mui/material";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
-import NavLinks from "../navLinks/NavLinks";
+// import NavLinks from "../navLinks/NavLinks";
 // import { CryptoState } from "../CryptoContext";
 import { MdRestaurantMenu } from "react-icons/md";
 import "./navbar.css";

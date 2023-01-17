@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "../../styles";
@@ -76,57 +77,71 @@ function Navbar() {
   );
 
   return (
-    <motion.nav
-      variants={navVariants}
-      initial="hidden"
-      whileInView="show"
-      className={`${styles.xPaddings} py-8 relative`}
-    >
-      <div className="absolute w-[50%] inset-0 gradient-01" />
-      <div
-        className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
+    <div className="navbar_container">
+      <motion.nav
+        variants={navVariants}
+        initial="hidden"
+        whileInView="show"
+        className={`${styles.xPaddings} py-8 relative`}
       >
-        <Box className="w-[24px] h-[24px] object-contain">
-          <Toolbar>
-            <Search>
-              <SearchIconWrapper>
-                <img
-                  src="/search.svg"
-                  alt="search"
-                  className="w-[24px] h-[24px] object-contain "
+        <div className="absolute w-[50%] inset-0 gradient-01 text-center" />
+        <div
+          className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
+        >
+          <Box className="w-[24px] h-[24px] object-contain">
+            <Toolbar>
+              <Search>
+                <SearchIconWrapper>
+                  <img
+                    src="/search.svg"
+                    alt="search"
+                    className="w-[24px] h-[24px] object-contain "
+                  />
+                </SearchIconWrapper>
+                <StyledInputBase
+                  placeholder="Search…"
+                  inputProps={{ "aria-label": "search" }}
                 />
-              </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Search…"
-                inputProps={{ "aria-label": "search" }}
-              />
-            </Search>
-          </Toolbar>
-        </Box>
+              </Search>
+            </Toolbar>
+          </Box>
 
-        {/* <h2 className="font-thin text-[24px] leading-[30px] text-white text-center">
+          {/* <h2 className="font-thin text-[24px] leading-[30px] text-white text-center">
           R O O M M I
         </h2> */}
-        <div className="roommie font-thin text-[24px] leading-[30px] text-white text-center ">
-          <p>R</p>
-          <p>O</p>
-          <p>O</p>
-          <p>M</p>
-          <p>M</p>
-          <p>I</p>
-        
-          <div className="title grid gap-1 md:gap-1">
-          <div className="e"></div>
-          <div className="e"></div>
-          <div className="e"></div>
-        </div>
-        </div>
+          <div className="roommie font-thin text-[24px] leading-[30px] text-white text-center">
+            <p>R</p>
+            <p>O</p>
+            <p>O</p>
+            <p>M</p>
+            <p>M</p>
+            <p>I</p>
 
-        {active ? closeIcon : humburger}
-        {active && <NavLinks />}
-        {/* {user ? <UserSideBar/> : <AuthModal/>} */}
+            <div className="title grid gap-1 md:gap-1">
+              <div className="e"></div>
+              <div className="e"></div>
+              <div className="e"></div>
+            </div>
+          </div>
+
+          {active ? closeIcon : humburger}
+          {/* {active && <NavLinks />} */}
+          {/* {user ? <UserSideBar/> : <AuthModal/>} */}
+        </div>
+      </motion.nav>
+      <div>
+        <nav className="text-white gap-10 text-center items-start">
+            <a href="#">Why</a>
+            <a href="#">Mission</a>
+            <a href="#">Values</a>
+            <a href="#">Who we are</a>
+            <a href="#Contact">Contact Us </a>
+        </nav>
+        <div className="flex flex-col">
+          <div className="mb-[50px] h-[2px] bg-white opacity-10" />
+        </div>
       </div>
-    </motion.nav>
+    </div>
   );
 }
 

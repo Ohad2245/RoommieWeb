@@ -12,7 +12,7 @@ import {
   World,
 } from "../screens";
 import Alert from '../components/Alert';
-import Values2 from "../components/values2/Values2";
+// import Values2 from "../components/values2/Values2";
 import Navbar from "../components/navbar/Navbar";
 import Card from "../components/cards/Card";
 
@@ -39,7 +39,6 @@ const Page = () => (
     <div className="relative">
       <Contact />
     <Testimonials/>
-    <Values2/>
     </div>
     <Card/>
     <Footer />

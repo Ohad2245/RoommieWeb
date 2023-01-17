@@ -30,6 +30,7 @@ function Contact() {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+      id="Contact"
     >
       <TypingText title="Get In Touch" textStyles="text-center" />
       <TitleText title="Contact Me" textStyles="text-center" />

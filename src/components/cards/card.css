@@ -80,7 +80,7 @@
   height: 100%;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(200px);
   opacity: 0;
   transition: 0.5s;
   animation: animate 2s ease-in-out infinite;
@@ -164,3 +164,16 @@
     font-weight: 700;
     margin-top:5px;
 }
+.content:hover{
+  font-size: 0;
+}
+.content:hover::after{
+  content:attr(data-hover);
+  font-size:17px;
+  line-height: 28px;
+  font-weight: 200;
+  text-align: center;
+}
+
+
+

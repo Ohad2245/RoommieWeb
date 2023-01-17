@@ -1,13 +1,14 @@
 .navbar_container {
   /* position: fixed;  */
-  position: relative;
+  position: fixed;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   backdrop-filter: blur(10px);
-  z-index: 1;
+  z-index: 11;
   transition: 0.5s;
   color: #fff;
+  width: 100%;
 }
 .title {
   width: 2px;
@@ -59,7 +60,7 @@ nav a {
   text-decoration: none;
   position: relative;
   font-family: "Poppins" sans-serif;
-  color: #a0a0a0;
+  color: #6b6b6b;
   font-size: 18px;
   letter-spacing: 0.5px;
   padding: 0 10px;
@@ -73,12 +74,10 @@ nav a:after {
   left: 0;
   bottom: -10px;
   transition: 0.3s;
-
 }
 nav a:hover {
   color: #ffffff;
   text-decoration: none;
-
 }
 nav a:hover:after {
   width: 100%;

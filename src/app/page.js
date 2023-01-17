@@ -3,46 +3,45 @@ import Testimonials from "../components/testimonials/Testimonials";
 import Contact from "../components/contact/Contact";
 import {
   About,
-  Explore,
-  Feedback,
+  // Feedback,
   GetStarted,
   Hero,
-  Insights,
-  WhatsNew,
-  World,
+  // Insights,
+  // WhatsNew,
+  // World,
 } from "../screens";
-import Alert from '../components/Alert';
+import Alert from "../components/Alert";
 // import Values2 from "../components/values2/Values2";
 import Navbar from "../components/navbar/Navbar";
 import Card from "../components/cards/Card";
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
-    <Navbar/>
+    <Navbar />
     <Hero />
     <div className="relative">
       <About />
       <div className="gradient-03 z-0" />
-      <Explore />
+      {/* <Explore /> */}
     </div>
     <div className="relative">
       <GetStarted />
       <div className="gradient-04 z-0" />
-      <WhatsNew />
+      {/* <WhatsNew /> */}
     </div>
-    <World />
+    {/* <World /> */}
     <div className="relative">
-      <Insights />
+      {/* <Insights /> */}
       <div className="gradient-04 z-0" />
-      <Feedback />
+      {/* <Feedback /> */}
     </div>
     <div className="relative">
-      <Contact />
-    <Testimonials/>
+      <Testimonials />
     </div>
-    <Card/>
+    <Card />
+    <Contact />
     <Footer />
-    <Alert/>
+    <Alert />
   </div>
 );
 

@@ -1,7 +1,6 @@
-.navbar_container{
-   /* position: fixed;  */
-   position: relative;
-  padding:20px;
+.navbar_container {
+  /* position: fixed;  */
+  position: relative;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -25,43 +24,60 @@
   border-bottom-right-radius: 4vmin;
   border-bottom-left-radius: 4vmin;
 }
-.roommie{
-    color:black;
-    display: flex;
-    gap:5px;
+.roommie {
+  color: black;
+  display: flex;
+  gap: 5px;
+  align-items: left;
 }
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
-*{
-    padding:0px;
-    margin:0;
-    box-sizing: border-box;
-	font-family: "Titillium Web", sans-serif;
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
 }
-:root{
-    --mainColor: #29335c;
-	--mainColorLight: #5767aa;
-	--secondaryColor: #db2b39;
-	--textColor: #eee;
+:root {
+  --mainColor: #2e3758;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #eee;
 }
-header{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    padding:0 2rem;
-    background-color:var(--mainColor);
-    color:var(--textColor);
+/* header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+} */
+nav a {
+  margin: 0 2rem;
+  color: var(--textColor);
+  text-decoration: none;
 }
-nav a{
-    margin:0 2rem;
-    color:var(--textColor);
-    text-decoration: none;
-
-}
-nav a:hover{
-    color:var(--mainColorLight);
-
+nav a:hover {
+  color: var(--secondaryColor);
 }
 
+@media screen and (max-width:1024px) {
+    nav a {
+        margin: 0 2rem;
+        text-decoration: none;
+        font-size: 14px;
+      }
 
+}
+
+/* ================= Media Queries Small ================= */
+
+@media screen and (max-width:600px) { 
+    nav a {
+        margin: 0 2rem;
+        text-decoration: none;
+        font-size: 10px;
+
+      }
+}

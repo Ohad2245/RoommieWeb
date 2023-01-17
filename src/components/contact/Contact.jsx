@@ -1,5 +1,5 @@
 import React from "react";
-import { TitleText, TypingText } from "../CustomTexts";
+import {TypingText } from "../CustomTexts";
 import { motion } from "framer-motion";
 import { staggerContainer } from "../../utils/motion";
 import styles from "../../styles";
@@ -32,8 +32,7 @@ function Contact() {
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
       id="Contact"
     >
-      <TypingText title="Get In Touch" textStyles="text-center" />
-      <TitleText title="Contact Me" textStyles="text-center" />
+      <TypingText title="Contact Us" textStyles="text-center" />
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">

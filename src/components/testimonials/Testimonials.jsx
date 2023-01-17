@@ -1,7 +1,7 @@
 import React from "react";
 import { staggerContainer } from "../../utils/motion";
 import { motion } from "framer-motion";
-import { TitleText, TypingText } from "../CustomTexts";
+import { TypingText } from "../CustomTexts";
 import styles from "../../styles";
 import "./testimonials.css";
 
@@ -62,8 +62,7 @@ function Testimonials() {
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
       id="Testimonials"
     >
-      <TitleText title="Review a look at the team " textStyles="text-center" />
-      <TypingText title="The winning team" textStyles="text-center" />
+      <TypingText title="Who we are" textStyles="text-center" />
 
       <Swiper
         className="container testimonials__container"

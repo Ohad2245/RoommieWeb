@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { TypingText } from '../components';
+// import { TypingText } from '../components';
 
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
@@ -16,13 +16,12 @@ const About = () => (
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
       id="Mission"
     >
-      <TypingText title="Mission Statement" textStyles="text-center" />
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[30px] text-[16px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-white ">Roommie</span><br></br>
-        Mission statement: Roommie aims to provide a renewed sense of excitement to people searching for new homes by gathering information, sorting it in the most efficient way, and simplifying time consuming processes.
+        {/* <span className="font-extrabold text-white ">Mission Statement</span><br></br> */}
+        <span className="font-extrabold">Mission statement:</span> Roommie aims to provide a renewed sense of excitement to people searching for new homes by gathering information, sorting it in the most efficient way, and simplifying time consuming processes.
       </motion.p>
       <motion.img
         variants={fadeIn('up' , 'tween' , 0.3 , 1)}

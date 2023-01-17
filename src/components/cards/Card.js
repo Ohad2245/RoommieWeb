@@ -4,7 +4,7 @@ import "./card.css";
 import { motion } from "framer-motion";
 import { staggerContainer } from "../../utils/motion";
 import styles from "../../styles";
-import {TitleText } from "../CustomTexts";
+import {TypingText } from "../CustomTexts";
 
 function Card() {
   return (
@@ -16,7 +16,7 @@ function Card() {
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
       id="Values2"
     >
-      <TitleText title="Our Values" textStyles="text-center" />
+      <TypingText title="Values" textStyles="text-center" />
     <div className="container" id="Values">
       <div className="box">
         <span></span>

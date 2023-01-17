@@ -132,9 +132,9 @@ function Navbar() {
       <div>
         <nav className="text-white gap-10 text-center items-start">
             <a href="#">Why</a>
-            <a href="#">Mission</a>
-            <a href="#">Values</a>
-            <a href="#">Who we are</a>
+            <a href="#Mission">Mission</a>
+            <a href="#Values">Values</a>
+            <a href="#Testimonials">Who we are</a>
             <a href="#Contact">Contact Us </a>
         </nav>
         <div className="flex flex-col">

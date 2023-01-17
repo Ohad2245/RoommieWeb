@@ -60,6 +60,7 @@ function Testimonials() {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+      id="Testimonials"
     >
       <TitleText title="Review a look at the team " textStyles="text-center" />
       <TypingText title="The winning team" textStyles="text-center" />

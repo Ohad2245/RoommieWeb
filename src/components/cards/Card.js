@@ -1,10 +1,23 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./card.css";
+import { motion } from "framer-motion";
+import { staggerContainer } from "../../utils/motion";
+import styles from "../../styles";
+import {TitleText } from "../CustomTexts";
 
 function Card() {
   return (
-    <div className="container">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+      id="Values2"
+    >
+      <TitleText title="Our Values" textStyles="text-center" />
+    <div className="container" id="Values">
       <div className="box">
         <span></span>
         <div
@@ -34,6 +47,7 @@ function Card() {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 }
 

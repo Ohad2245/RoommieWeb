@@ -14,6 +14,7 @@ const About = () => (
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+      id="Mission"
     >
       <TypingText title="Mission Statement" textStyles="text-center" />
       <motion.p

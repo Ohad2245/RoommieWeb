@@ -18,6 +18,9 @@ import Card from "../components/cards/Card";
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
     <Navbar />
+    <br></br>
+    <br></br>
+    <br></br>
     <Hero />
     <div className="relative">
       <About />

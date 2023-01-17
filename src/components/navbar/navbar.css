@@ -9,6 +9,7 @@
   transition: 0.5s;
   color: #fff;
   width: 100%;
+  
 }
 .title {
   width: 2px;
@@ -55,15 +56,16 @@
   color: var(--textColor);
 } */
 nav a {
-  margin: 0 2rem;
+  margin:0 2rem;
   color: var(--textColor);
   text-decoration: none;
   position: relative;
   font-family: "Poppins" sans-serif;
-  color: #6b6b6b;
+  color: #c1b7b7;
   font-size: 18px;
   letter-spacing: 0.5px;
   padding: 0 10px;
+  
 }
 nav a:after {
   content: "";

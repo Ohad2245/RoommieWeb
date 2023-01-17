@@ -137,7 +137,7 @@ function Navbar() {
             <a href="#Testimonials">Who we are</a>
             <a href="#Contact">Contact Us </a>
         </nav>
-      </div>
+      </div> 
     </div>
   );
 }

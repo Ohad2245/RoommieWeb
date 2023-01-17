@@ -82,7 +82,7 @@ function Navbar() {
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className={`${styles.xPaddings} py-8 relative`}
+        className={`${styles.xPaddings} py-2 relative`}
       >
         <div className="absolute w-[50%] inset-0 gradient-01" />
         <div
@@ -137,7 +137,8 @@ function Navbar() {
             <a href="#Testimonials">Who we are</a>
             <a href="#Contact">Contact Us </a>
         </nav>
-      </div> 
+      </div>
+      
     </div>
   );
 }

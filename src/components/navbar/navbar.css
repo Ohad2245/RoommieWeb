@@ -67,15 +67,18 @@ nav a {
 nav a:after {
   content: "";
   position: absolute;
-  background-color: #ff3c78;
-  height: 3px;
+  background-color: rgb(234, 37, 37);
+  height: 1.5px;
   width: 0;
   left: 0;
   bottom: -10px;
   transition: 0.3s;
+
 }
-nav a:hover{
-    color:#ffffff;
+nav a:hover {
+  color: #ffffff;
+  text-decoration: none;
+
 }
 nav a:hover:after {
   width: 100%;

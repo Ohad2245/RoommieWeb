@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { staggerContainer } from "../../utils/motion";
 import { motion } from "framer-motion";
@@ -64,40 +66,49 @@ function Testimonials() {
     >
       <TypingText title="Who we are" textStyles="text-center" />
       <div>
-              <div className="tree">
-                <ul>
-                  <li>
-                    <img src="/Eliyahu.jpeg" alt="1" />
-                    <ul>
-                      <li>
-                        <img src='ohad.jpeg' alt="2" />
-                      </li>
-                      <li>
-                      <img src="/Eliyahu.jpeg" alt="1" />
-                      </li>
-                      <li>
-                      <img src="/Eliyahu.jpeg" alt="1" />
-                      </li>
-                      <li>
-                      <img src="/Eliyahu.jpeg" alt="1" />
-                      </li>
-                      <ul className="ohad">
-                        <li><img src="/Liat.jpeg" alt="1" /></li>
-                        <li><img src="/Rashi.jpeg" alt="1" /></li>
-                        <li><img src="/Eliyahu.jpeg" alt="1" /></li>
-                      </ul>
-                    </ul>
-                  </li>
-                </ul>
+      <div class="tree">
+	<ul>
+		<li>
+			<a href="#"><img src="/Eliyahu.jpeg"/></a>
+			<ul>
+				<li>
+        <a href="#">Yael</a>
+				</li>
+        <li><a href="#">Kosta</a>
+        </li>
+        <li>
+        <a href="#"><img src="/ohad.jpeg"/></a>
+					<ul>
+          <li>
+        <a href="#"><img src="/Yonatan.jpeg"/></a>
+					<ul>
+						<li><a href="#"><img src="/Omer.jpeg"></img></a></li>
+						<li>
+							<a href="#">Grand Child</a>
+						</li>
+						<li><a href="#">Grand Child</a></li>
+					</ul>
+			</li>
+						<li><a href="#"><img src="/Liat.jpeg" /></a></li>
+						<li>
+							<a href="#"><img src="/Rashi.jpeg" /></a>
+						</li>
+						<li><a href="#">Sacha</a></li>
+						<li><a href="#">Asra</a></li>
+					</ul>
+			</li>
+			</ul>
+		</li>
+	</ul>
+</div>
 
-                {/* <h2 className="font-bold text-white">{name}</h2> */}
-                {/* <h4 className="text-stone-300	 font-thin block w-100 m-2">
+          {/* <h2 className="font-bold text-white">{name}</h2> */}
+          {/* <h4 className="text-stone-300	 font-thin block w-100 m-2">
                 {title}
               </h4> */}
-                {/* <small className="text-neutral-100 font-thin block w-100 m-2">
+          {/* <small className="text-neutral-100 font-thin block w-100 m-2">
                 {review}
               </small> */}
-              </div>
       </div>
     </motion.div>
   );

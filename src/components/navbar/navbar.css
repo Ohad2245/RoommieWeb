@@ -8,7 +8,7 @@
   transition: 0.5s;
   color: #fff;
   width: 100%;
-  
+  margin-top: -30px;
   
 }
 .title {
@@ -60,11 +60,10 @@ nav a {
   color: var(--textColor);
   text-decoration: none;
   position: relative;
-  font-family: "Poppins" sans-serif;
   color: #c1b7b7;
   font-size: 18px;
   letter-spacing: 0.5px;
-  padding: 0 10px;
+  padding:0 10px;
   
 }
 nav a:after {

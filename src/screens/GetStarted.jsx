@@ -4,8 +4,28 @@ import { TypingText, StartSteps } from '../components';
 import styles from '../styles';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 import { startingFeatures } from '../constants';
+import '../components/contact/contact.css';
 
-const GetStarted = () => (
+const GetStarted = () => {
+  function reveal() {
+    const reveals = document.querySelectorAll(".reveal");
+    // const reveals = this.myRef.current;
+
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+return(
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
       variants={staggerContainer}
@@ -26,21 +46,22 @@ const GetStarted = () => (
       </motion.div>
       <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] flex justify-center flex-col"
+        className="flex-[0.75] flex justify-center flex-col "
       >
         <TypingText title="How Roommie Works" />
-        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
+        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px] reveal">
           {startingFeatures.map((feature, index) => (
             <StartSteps
               key={feature}
               number={index + 1}
               text={feature}
+              
             />
           ))}
         </div>
       </motion.div>
     </motion.div>
   </section>
-);
+)};
 
 export default GetStarted;

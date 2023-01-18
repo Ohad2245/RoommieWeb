@@ -6,23 +6,23 @@ import styles from "../../styles";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import "./contact.css";
-import emailjs from "emailjs-com";
-import { useRef } from "react";
+// import emailjs from "emailjs-com";
+// import { useRef } from "react";
 
 function Contact() {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const form = useRef();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs.sendForm(
-      "service_rsz4p62",
-      "template_kf8z3kc",
-      form.current,
-      "KQZ1FUigy-wCZY0js"
-    );
+  //   emailjs.sendForm(
+  //     "service_rsz4p62",
+  //     "template_kf8z3kc",
+  //     form.current,
+  //     "KQZ1FUigy-wCZY0js"
+  //   );
 
-    e.target.reset();
-  };
+  //   e.target.reset();
+  // };
   return (
     <motion.div
       variants={staggerContainer}
@@ -36,19 +36,21 @@ function Contact() {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
+            <MdOutlineEmail className="contact__options-icon" />
             <h4>Email</h4>
-            <h5>ohad909881122@gmail.com</h5>
+            <h5>Roommie@gmail.com</h5>
             <a
-              href="mailto:ohad909881122@gmail.com"
+              href="mailto:Roommie@gmail.com"
               target="_blank"
               rel="noreferrer"
+              className="text-white font-extrabold"
+
             >
               Send a Message
             </a>
           </article>
 
-          <article className="contact__option">
+          {/* <article className="contact__option">
             <RiMessengerLine className="contact__option-icon" />
             <h4>Messenger</h4>
             <h5>Eliyahu Yifrach</h5>
@@ -59,22 +61,23 @@ function Contact() {
             >
               Send a Massage
             </a>
-          </article>
+          </article> */}
 
           <article className="contact__option">
-          <RiMessengerLine className="contact__option-icon" />
+          <RiMessengerLine className="contact__options-icon" />
             <h4>WhatsApp</h4>
             <h5>050-909-8812</h5>
             <a
               href="https://api.whatsapp.com/send?phone=0509098812"
               target="_blank"
               rel="noreferrer"
+              className="text-white font-extrabold"
             >
               Send a Massage
             </a>
           </article>
         </div>
-        <form ref={form} onSubmit={sendEmail} className="form reveal">
+        {/* <form ref={form} onSubmit={sendEmail} className="form reveal">
           <input
             type="text"
             name="name"
@@ -99,7 +102,7 @@ function Contact() {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
-        </form>
+        </form> */}
       </div>
     </motion.div>
   );

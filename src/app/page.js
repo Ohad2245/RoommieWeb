@@ -17,7 +17,9 @@ import Card from "../components/cards/Card";
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
+        <div className="gradient-03 z-0" />
     <Navbar />
+    <br></br>
     <br></br>
     <br></br>
     <br></br>

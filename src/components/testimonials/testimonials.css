@@ -1,8 +1,41 @@
+
+.tree{
+    width:100%;
+    height:auto;
+    text-align:center;
+}
+.tree ul{
+    padding-top:20px;
+    position:relative;
+}
 .container.testimonials__container{
     width:40%;
     padding-bottom: 4rem;
+    transition: .5s;
+}
+.tree li{
+    display: inline-table;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding:30px;
+    transition: .5s;
+}
+.tree .ohad li{
+    padding:5px;
+    margin-left: -100px;
+
 }
 
+.tree img{
+    width:50px;
+    height:50px;
+    margin-bottom:10px !important;
+    border-radius: 100px;
+    margin:auto;
+}
+
+ 
 .friend__avatar{
     width:4rem;
     aspect-ratio:1/1;
@@ -31,9 +64,9 @@
 } */
 
 
-.swiper-pagination-clickable .swiper-pagination-bullet{
+/* .swiper-pagination-clickable .swiper-pagination-bullet{
     background: #4db5ff;
-}
+} */
 
 
 @media screen and (max-width:1024px) {

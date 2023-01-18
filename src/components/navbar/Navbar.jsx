@@ -109,7 +109,8 @@ function Navbar() {
           {/* <h2 className="font-thin text-[24px] leading-[30px] text-white text-center">
           R O O M M I
         </h2> */}
-          <div className="roommie font-thin text-[24px] leading-[30px] text-white">
+        <a href="#">
+          <div className="roommie font-thin text-[24px] leading-[30px] text-white"> 
             <p>R</p>
             <p>O</p>
             <p>O</p>
@@ -122,8 +123,9 @@ function Navbar() {
               <div className="e"></div>
               <div className="e"></div>
             </div>
+            
           </div>
-
+</a>
           {/* {active ? closeIcon : humburger} */}
           {/* {active && <NavLinks />} */}
           {/* {user ? <UserSideBar/> : <AuthModal/>} */}

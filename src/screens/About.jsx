@@ -21,7 +21,7 @@ const About = () => (
         className="mt-[8px] font-normal sm:text-[30px] text-[16px] text-center text-secondary-white"
       >
         {/* <span className="font-extrabold text-white ">Mission Statement</span><br></br> */}
-        <span className="font-extrabold">Mission statement:</span> Roommie aims to provide a renewed sense of excitement to people searching for new homes by gathering information, sorting it in the most efficient way, and simplifying time consuming processes.
+        <span className="font-extrabold">Mission Statement:</span> Roommie aims to provide a renewed sense of excitement to people searching for new apartments and roommates by gathering information, sorting it in the most efficient way, and simplifying time consuming processes.
       </motion.p>
       <motion.img
         variants={fadeIn('up' , 'tween' , 0.3 , 1)}

@@ -76,13 +76,13 @@ const Carousel = () => {
     },
   };
   return (
-    <div id="Why">
+    <div id="Why" className="h-2/4 flex items-center">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={` flex-col`}
+        className={`flex-col`}
       >
         <TypingText title="Why Roommie" textStyles="text-center" />
 

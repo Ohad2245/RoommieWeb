@@ -69,36 +69,36 @@ const Footer = () => {
                   rel="noreferrer"
                 >
                   <img
-                    src="/800px-Linkedin_icon.svg.png"
+                    src="/linkedin.svg"
                     width="27"
                     height="20"
                   />
-                </a>
-              </Button>
-
-              {/* <Button>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="/instagram-icon.png" width="27" height="20" />
                 </a>
               </Button>
 
               <Button>
                 <a
-                  href="https://www.facebook.com"
+                  href="https://instagram.com/roommieofficial?igshid=YmMyMTA2M2Y="
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="/instagram.svg" width="27" height="20" />
+                </a>
+              </Button>
+
+              <Button>
+                <a
+                  href="https://www.facebook.com/RoommieOfficial/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img
-                    src="/2021_Facebook_icon.svg.png"
+                    src="/facebook.svg"
                     width="27"
                     height="20"
                   />
                 </a>
-              </Button> */}
+              </Button>
             </div>
           </div>
         </div>

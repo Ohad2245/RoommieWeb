@@ -37,8 +37,8 @@ function Contact() {
         <div className="contact__options">
           <article className="contact__option">
             <MdOutlineEmail className="contact__options-icon" />
-            <h4>Email</h4>
-            <h5>Roommie@gmail.com</h5>
+            <h4 className="font-bold">Email</h4>
+            <h5 className="text-neutral-700 email" data-hover="test">Roommie@gmail.com</h5>
             <a
               href="mailto:Roommie@gmail.com"
               target="_blank"
@@ -46,7 +46,7 @@ function Contact() {
               className="text-white font-extrabold"
 
             >
-              Send a Message
+              Send Email
             </a>
           </article>
 
@@ -65,8 +65,8 @@ function Contact() {
 
           <article className="contact__option">
           <RiMessengerLine className="contact__options-icon" />
-            <h4>WhatsApp</h4>
-            <h5>050-909-8812</h5>
+          <h4 className="font-bold">Whatsapp</h4>
+            <h5 className="text-neutral-700">050-909-8812</h5>
             <a
               href="https://api.whatsapp.com/send?phone=0509098812"
               target="_blank"

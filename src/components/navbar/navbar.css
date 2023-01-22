@@ -23,8 +23,8 @@
   height: 3px;
   background: white;
   top: -7.2vmin;
-  border-bottom-right-radius: 4vmin;
-  border-bottom-left-radius: 4vmin;
+  border-bottom-right-radius: 10vmin;
+  border-bottom-left-radius: 10vmin;
 }
 .roommie {
   color: black;
@@ -69,8 +69,8 @@ nav a {
 nav a:after {
   content: "";
   position: absolute;
-  background-color: rgb(234, 37, 37);
-  height: 1.5px;
+  background:linear-gradient(#b946c8,rgb(87, 56, 90));
+  height: 1.8px;
   width: 0;
   left: 0;
   bottom: -3px;

@@ -51,6 +51,12 @@ const data = [
     review: `Over the past few years, I've learned a lot about programming in C++ and Python.
         I carried out interesting projects, I gave programming lessons to students and friends.`,
   },
+  {
+    avatar: "/Rashi.jpeg",
+    name: "Rashi Pachino",
+    title: "Frontend Developer",
+    review: '',
+  },
   
 ];
 

@@ -19,49 +19,49 @@ const items = [
     src="/2.jpg"
     onDragStart={handleDragStart}
     role="presentation"
-    height="300px"
+    height="200px"
     width="300px"
   />,
   <img
     src="/3.jpg"
     onDragStart={handleDragStart}
     role="presentation"
-    height="300px"
+    height="200px"
     width="300px"
   />,
   <img
     src="/4.jpg"
     onDragStart={handleDragStart}
     role="presentation"
-    height="300px"
+    height="200px"
     width="300px"
   />,
   <img
     src="/5.jpg"
     onDragStart={handleDragStart}
     role="presentation"
-    height="300px"
+    height="200px"
     width="300px"
   />,
   <img
     src="/6.jpg"
     onDragStart={handleDragStart}
     role="presentation"
-    height="300px"
+    height="200px"
     width="300px"
   />,
   <img
     src="/7.jpg"
     onDragStart={handleDragStart}
     role="presentation"
-    height="300px"
+    height="200px"
     width="300px"
   />,
   <img
     src="/8.jpg"
     onDragStart={handleDragStart}
     role="presentation"
-    height="300px"
+    height="200px"
     width="300px"
   />,
 ];
@@ -69,21 +69,20 @@ const items = [
 const Carousel = () => {
   const responsive = {
     0: {
-      items: 2,
+      items: 1,
     },
     512: {
-      items: 4,
+      items: 1,
     },
   };
   return (
-    <div>
+    <div id="Why">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={` flex-col`}  
-        id="Why"
+        className={` flex-col`}
       >
         <TypingText title="Why Roommie" textStyles="text-center" />
 

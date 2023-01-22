@@ -1,15 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { makeStyles } from "@mui/styles";
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
-
-const useStyles = makeStyles((theme) => ({
-  carousel: {
-    height: "50%",
-    display: "flex",
-    alignItems: "center",
-  },
-}));
+import { motion } from "framer-motion";
+import { TypingText } from "../CustomTexts";
+import { staggerContainer } from "../../utils/motion";
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -73,7 +67,6 @@ const items = [
 ];
 
 const Carousel = () => {
-  const classes = useStyles();
   const responsive = {
     0: {
       items: 2,
@@ -81,20 +74,31 @@ const Carousel = () => {
     512: {
       items: 4,
     },
-    
   };
   return (
-    <div className={classes.carousel} id="Why">
-      <AliceCarousel
-        mouseTracking
-        infinite
-        autoPlayInterval={1000}
-        animationDuration={1500}
-        disableDotsControls
-        responsive={responsive}
-        items={items}
-        autoPlay
-      />
+    <div>
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={` flex-col`}  
+        id="Why"
+      >
+        <TypingText title="Why Roommie" textStyles="text-center" />
+
+        <AliceCarousel
+          mouseTracking
+          infinite
+          autoPlayInterval={1000}
+          animationDuration={1500}
+          disableDotsControls
+          disableButtonsControls
+          responsive={responsive}
+          items={items}
+          autoPlay
+        />
+      </motion.div>
     </div>
   );
 };

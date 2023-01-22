@@ -135,10 +135,10 @@ function Navbar() {
       </motion.nav>
       <div>
         <nav className="text-white gap-10 text-center items-start">
-            <a href="#">Why</a>
             <a href="#Mission">Mission</a>
             <a href="#Testimonials">Who we are</a>
             <a href="#Values">Values</a>
+            <a href="#Why">Why</a>
             <a href="#Contact">Contact Us </a>
         </nav>
       </div>

@@ -15,41 +15,76 @@ const handleDragStart = (e) => e.preventDefault();
 
 const items = [
   <img
-    src='/1.jpg'
+    src="/1.jpg"
     onDragStart={handleDragStart}
     role="presentation"
     width="300px"
-    height='300px'
+    height="300px"
   />,
   <img
     src="/2.jpg"
     onDragStart={handleDragStart}
     role="presentation"
-    height='300px'
+    height="300px"
     width="300px"
   />,
   <img
     src="/3.jpg"
     onDragStart={handleDragStart}
     role="presentation"
-    height='300px'
+    height="300px"
+    width="300px"
+  />,
+  <img
+    src="/4.jpg"
+    onDragStart={handleDragStart}
+    role="presentation"
+    height="300px"
+    width="300px"
+  />,
+  <img
+    src="/5.jpg"
+    onDragStart={handleDragStart}
+    role="presentation"
+    height="300px"
+    width="300px"
+  />,
+  <img
+    src="/6.jpg"
+    onDragStart={handleDragStart}
+    role="presentation"
+    height="300px"
+    width="300px"
+  />,
+  <img
+    src="/7.jpg"
+    onDragStart={handleDragStart}
+    role="presentation"
+    height="300px"
+    width="300px"
+  />,
+  <img
+    src="/8.jpg"
+    onDragStart={handleDragStart}
+    role="presentation"
+    height="300px"
     width="300px"
   />,
 ];
 
-
 const Carousel = () => {
   const classes = useStyles();
-  const responsive ={
-    0:{
-        items:2,
+  const responsive = {
+    0: {
+      items: 2,
     },
-    512:{
-        items:4,
+    512: {
+      items: 4,
     },
-  }
+    
+  };
   return (
-    <div className={classes.carousel}>
+    <div className={classes.carousel} id="Why">
       <AliceCarousel
         mouseTracking
         infinite

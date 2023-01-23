@@ -1,5 +1,4 @@
 import React from "react";
-import CardTest from "../cardsTest/CardTest";
 // import { BsPatchCheckFill } from "react-icons/bs";
 import "./why2.css";
 

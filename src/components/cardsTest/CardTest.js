@@ -1,11 +1,15 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import CardTest from "../cardsTest/CardTest";
-// import { BsPatchCheckFill } from "react-icons/bs";
-import "./why2.css";
+import '../../components/why/why2.css';
 
-const Why2 = () => {
+function CardTest() {
   return (
-      <div class="container experience__container reveal">
+    <div className="container2" id="Values">
+      <div className="box2">
+        <div
+          className="content2"
+        >
+          
           <div class="experience__content">
             <article className="experience__details ">
               {/* <BsPatchCheckFill className="experience__details-icon" /> */}
@@ -46,7 +50,9 @@ const Why2 = () => {
           </div>
           
         </div>
+      </div>
+    </div>
   );
-};
+}
 
-export default Why2;
+export default CardTest;

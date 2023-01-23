@@ -1,12 +1,12 @@
 .experience__container{
     display: grid;
-    gap: 2rem;
 }
+
 .experience__container > div{
     background: #2c2c6c;
-    padding:2.4rem 5rem;
-    border-radius: 2rem;
-    border:1px solid transparent;
+    padding: 2.4rem 5rem;
+    border-radius:2rem;
+    border: 1px solid transparent;
     transition:all 400ms ease ;
 }
 
@@ -20,15 +20,13 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
 }
-.experience__details{
-    display:flex;
-    gap:2rem;
-}
+
 .experience__details-icon{
     margin-top: 6px;
     color:#4db5ff;
-    width: 100%;
+    
 }
+
 
 @media screen and (max-width:1024px) {
     .experience__container{
@@ -44,11 +42,9 @@
     .experience__content{
         padding:1rem;
     }
-
 }
 
 /* ================= Media Queries Small ================= */
-
 @media screen and (max-width:600px) { 
     .experience__container{
         gap:1rem;

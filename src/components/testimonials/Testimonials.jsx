@@ -22,8 +22,7 @@ const data = [
     avatar: "/Yael.jpeg",
     name: "Yael Gargir",
     title: "CMO",
-    review: `Over the past few years, I've learned a lot about programming in C++ and Python.
-        I carried out interesting projects, I gave programming lessons to students and friends.`,
+    review: ``,
   },
   {
     avatar: "/Ohad.jpeg",

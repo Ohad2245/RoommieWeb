@@ -3,80 +3,54 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import { motion } from "framer-motion";
 import { TypingText } from "../CustomTexts";
-import { staggerContainer } from "../../utils/motion";
+import { fadeIn, staggerContainer } from "../../utils/motion";
+import Why2 from "./Why2";
 
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
   <img
-    src="/1.jpg"
+    src="/6.jpg"
     onDragStart={handleDragStart}
     role="presentation"
     width="300px"
     height="300px"
   />,
   <img
-    src="/2.jpg"
+    src="/15.jpg"
     onDragStart={handleDragStart}
     role="presentation"
     height="200px"
     width="300px"
   />,
   <img
-    src="/3.jpg"
-    onDragStart={handleDragStart}
-    role="presentation"
-    height="200px"
-    width="300px"
-  />,
+  src="/8.jpg"
+  onDragStart={handleDragStart}
+  role="presentation"
+  height="200px"
+  width="300px"
+/>,
   <img
-    src="/4.jpg"
-    onDragStart={handleDragStart}
-    role="presentation"
-    height="200px"
-    width="300px"
-  />,
-  <img
-    src="/5.jpg"
-    onDragStart={handleDragStart}
-    role="presentation"
-    height="200px"
-    width="300px"
-  />,
-  <img
-    src="/6.jpg"
-    onDragStart={handleDragStart}
-    role="presentation"
-    height="200px"
-    width="300px"
-  />,
-  <img
-    src="/7.jpg"
-    onDragStart={handleDragStart}
-    role="presentation"
-    height="200px"
-    width="300px"
-  />,
-  <img
-    src="/8.jpg"
-    onDragStart={handleDragStart}
-    role="presentation"
-    height="200px"
-    width="300px"
-  />,
+  src="/8.jpg"
+  onDragStart={handleDragStart}
+  role="presentation"
+  height="200px"
+  width="300px"
+/>,
+  
 ];
 
-const Carousel = () => {
+const Why = () => {
   const responsive = {
     0: {
-      items: 1,
+      items: 2,
     },
     512: {
-      items: 1,
+      items: 4,
     },
   };
   return (
-    <div id="Why" className="h-2/4 flex items-center">
+    <div id="Why">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -85,7 +59,13 @@ const Carousel = () => {
         className={`flex-col`}
       >
         <TypingText title="Why Roommie" textStyles="text-center" />
-
+        <motion.p
+        variants={fadeIn('up', 'tween', 0.2, 1)}
+        className="mt-[8px] font-normal sm:text-[30px] text-[16px] text-center text-secondary-white"
+      >
+          <small>Why we exist ? <br></br>To help people who are searching for new apartments and or roommates by<br></br> eliminating the frustration and difficulty they experience in todays real estate market.</small>
+        </motion.p>
+        <br></br>
         <AliceCarousel
           mouseTracking
           infinite
@@ -98,8 +78,9 @@ const Carousel = () => {
           autoPlay
         />
       </motion.div>
+      <Why2/>
     </div>
   );
 };
 
-export default Carousel;
+export default Why;

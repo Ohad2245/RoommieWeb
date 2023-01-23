@@ -14,7 +14,7 @@ import Alert from "../components/Alert";
 // import Values2 from "../components/values2/Values2";
 import Navbar from "../components/navbar/Navbar";
 import Card from "../components/cards/Card";
-import Carousel from "../components/banner/Carousel";
+import Why from "../components/why/Why";
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
@@ -44,7 +44,7 @@ const Page = () => (
     <div className="relative">
       <Testimonials />
     </div>
-    <Carousel/>
+    <Why/>
     <Card />
     <Contact />
     <Footer />

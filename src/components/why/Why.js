@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { TypingText } from "../CustomTexts";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import Why2 from "./Why2";
+import './why2.css';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -76,6 +77,7 @@ const Why = () => {
           responsive={responsive}
           items={items}
           autoPlay
+          
         />
       </motion.div>
       <Why2/>

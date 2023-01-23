@@ -41,7 +41,7 @@ const About = () => (
               src="Hackaton.jpg"
               alt="Hackaton"
               width="300px"
-              className="img"
+              className="testing"
             />
           </div>
         </div>

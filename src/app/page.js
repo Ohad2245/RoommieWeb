@@ -2,7 +2,7 @@ import { Footer } from "../components";
 import Testimonials from "../components/testimonials/Testimonials";
 import Contact from "../components/contact/Contact";
 import {
-  About,
+  
   // Feedback,
   GetStarted,
   Hero,
@@ -15,6 +15,7 @@ import Alert from "../components/Alert";
 import Navbar from "../components/navbar/Navbar";
 import Card from "../components/cards/Card";
 import Why from "../components/why/Why";
+import Mission from '../screens/mission/Mission';
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
@@ -26,7 +27,7 @@ const Page = () => (
     <br></br>
     <Hero />
     <div className="relative">
-      <About />
+      <Mission/>
       <div className="gradient-03 z-0" />
       {/* <Explore /> */}
     </div>

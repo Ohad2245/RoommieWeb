@@ -1,5 +1,5 @@
 import Hero from './Hero';
-import About from './Mession';
+import Mission from './mission/Mission';
 import Explore from './Explore';
 import GetStarted from './GetStarted';
 import WhatsNew from './WhatsNew';
@@ -9,7 +9,7 @@ import Feedback from './Feedback';
 
 export {
   Hero,
-  About,
+  Mission,
   Explore,
   GetStarted,
   WhatsNew,

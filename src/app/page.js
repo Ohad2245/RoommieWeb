@@ -1,5 +1,5 @@
 import { Footer } from "../components";
-import Testimonials from "../components/testimonials/Testimonials";
+import WhoWeAre from "../components/whoWeAre/WhoWeAre";
 import Contact from "../components/contact/Contact";
 import {
   
@@ -43,7 +43,7 @@ const Page = () => (
       {/* <Feedback /> */}
     </div>
     <div className="relative">
-      <Testimonials />
+      <WhoWeAre/>
     </div>
     <Why/>
     <Card />

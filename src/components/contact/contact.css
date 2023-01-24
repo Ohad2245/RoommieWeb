@@ -69,18 +69,33 @@
   opacity: 1;
 }
 
-.sendMessage{
-    color:white;
+.contact__option .sendMessage{
+  color:transparent;
 }
-.email:hover {
+
+.interactive{
+  width:100%;
+  height:100%;
+}
+
+.interactive:hover .sendMessage{
+  display :block;
+}
+.contact__option:hover {
   font-size: 0;
 }
-.sendMessage:hover::after {
-  content: attr(data-hover);
-  font-size: 17px;
+.sendMessage{
+  color:white;
+  
+}
+
+.contact__option:hover .sendMessage{
+  font-size: 20px;
   line-height: 28px;
   font-weight: 200;
   text-align: center;
+  color:white;
+  font-weight: 700;
 }
 
 /* ================= Media Queries Medium ================= */

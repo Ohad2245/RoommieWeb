@@ -77,7 +77,6 @@ const Why = () => {
           responsive={responsive}
           items={items}
           autoPlay
-          
         />
       </motion.div>
       <Why2/>

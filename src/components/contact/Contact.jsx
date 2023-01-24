@@ -35,21 +35,23 @@ function Contact() {
       <TypingText title="Contact Us" textStyles="text-center" />
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
+          <article className="contact__option"
+           >
             <MdOutlineEmail className="contact__options-icon" />
             <h4 className="font-bold">Email</h4>
-            <h5 className="text-neutral-700 email" data-hover="test">Roommie@gmail.com</h5>
+            <h5 className="text-neutral-700 email">Roommie@gmail.com</h5>
+            <div className="interactive">
             <a
               href="mailto:Roommie@gmail.com"
               target="_blank"
               rel="noreferrer"
-              className="text-white font-extrabold"
-
+              className="sendMessage"
             >
               Send Email
             </a>
+            </div>
           </article>
-
+         
           {/* <article className="contact__option">
             <RiMessengerLine className="contact__option-icon" />
             <h4>Messenger</h4>
@@ -67,14 +69,16 @@ function Contact() {
           <RiMessengerLine className="contact__options-icon" />
           <h4 className="font-bold">Whatsapp</h4>
             <h5 className="text-neutral-700">050-909-8812</h5>
+            <div className="interactive">
             <a
               href="https://api.whatsapp.com/send?phone=0509098812"
               target="_blank"
               rel="noreferrer"
-              className="text-white font-extrabold"
+              className="font-bold sendMessage"
             >
               Send a Massage
             </a>
+            </div>
           </article>
         </div>
         {/* <form ref={form} onSubmit={sendEmail} className="form reveal">

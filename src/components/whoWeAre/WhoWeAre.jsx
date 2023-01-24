@@ -5,7 +5,7 @@ import { staggerContainer } from "../../utils/motion";
 import { motion } from "framer-motion";
 import { TypingText } from "../CustomTexts";
 import styles from "../../styles";
-import "./testimonials.css";
+import "./whoWeAre.css";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -59,7 +59,7 @@ const data = [
   
 ];
 
-function Testimonials() {
+function WhoWeAre() {
   return (
     <motion.div
       variants={staggerContainer}
@@ -95,4 +95,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default WhoWeAre;

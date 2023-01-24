@@ -41,7 +41,7 @@ return(
         <img
           src="/4fc2ba69-2011-4876-8178-28731ed094e7.png"
           alt="get-started"
-          className="w-[90%] h-[90%] object-contain"
+          className="w-[70%] h-[70%] object-contain"
         />
       </motion.div>
       <motion.div

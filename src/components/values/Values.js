@@ -1,13 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import "./card.css";
+import "./values.css";
 import { motion } from "framer-motion";
 import { staggerContainer } from "../../utils/motion";
 import styles from "../../styles";
 import {TypingText } from "../CustomTexts";
 
-function Card() {
+function Values() {
   return (
+    
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -16,6 +17,7 @@ function Card() {
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
       id="Values2"
     >
+    
       <TypingText title="Values" textStyles="text-center" />
     <div className="container" id="Values">
       <div className="box">
@@ -47,8 +49,10 @@ function Card() {
         </div>
       </div>
     </div>
+    
     </motion.div>
+    
   );
 }
 
-export default Card;
+export default Values;

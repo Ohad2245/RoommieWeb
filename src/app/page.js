@@ -13,7 +13,7 @@ import {
 import Alert from "../components/Alert";
 // import Values2 from "../components/values2/Values2";
 import Navbar from "../components/navbar/Navbar";
-import Card from "../components/cards/Card";
+import Values from "../components/values/Values";
 import Why from "../components/why/Why";
 import Mission from '../screens/mission/Mission';
 
@@ -46,7 +46,7 @@ const Page = () => (
       <WhoWeAre/>
     </div>
     <Why/>
-    <Card />
+    <Values />
     <Contact />
     <Footer />
     <Alert />

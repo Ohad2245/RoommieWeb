@@ -72,17 +72,15 @@ function WhoWeAre() {
         modules={[Pagination]}
         spaceBetween={40}
         slidesPerView={1}
-        pagination={{ clickable: true }}
-      >
-        {data.map(({ avatar, name, review ,title}, index) => {
+        pagination={{ clickable: true }} >
+        {data.map(({ avatar, name,title}, index) => {
           return (
             <SwiperSlide key={index} className="testimonial">
-              <div class="client__avatar">
+              <div className="client__avatar">
                 <img src={avatar} />
               </div>
               <h5 className="client__name">{name}</h5>
               <small className="client__title">{title}</small>
-              <small className="client__review">{review}</small>
             </SwiperSlide>
           );
         })}

@@ -4,8 +4,8 @@ import "./why2.css";
 
 const Why2 = () => {
   return (
-    <div class="container experience__container reveal">
-      <div class="experience__content">
+    <div className="container experience__container reveal">
+      <div className="experience__content">
         <article className="experience__details ">
           {/* <BsPatchCheckFill className="experience__details-icon" /> */}
           <div className="text-white">

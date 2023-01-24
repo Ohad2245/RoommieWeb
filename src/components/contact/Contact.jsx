@@ -68,15 +68,15 @@ function Contact() {
           <article className="contact__option">
           <RiMessengerLine className="contact__options-icon" />
           <h4 className="font-bold">Whatsapp</h4>
-            <h5 className="text-neutral-700">050-909-8812</h5>
+            <h5 className="text-neutral-700">058-591-6441</h5>
             <div className="interactive">
             <a
-              href="https://api.whatsapp.com/send?phone=0509098812"
+              href="https://api.whatsapp.com/send?phone=0585916441"
               target="_blank"
               rel="noreferrer"
               className="font-bold sendMessage"
             >
-              Send a Massage
+              Send a Message
             </a>
             </div>
           </article>

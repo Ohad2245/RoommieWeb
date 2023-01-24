@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 
 const data = [
   {
-    avatar: "/Eliyahu.jpeg",
+    avatar: "/Eliyahu.jpg",
     name: "Eliyahu Yifrach",
     title: "Founder | CEO of Roommie",
     review: "",

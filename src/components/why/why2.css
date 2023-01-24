@@ -29,7 +29,14 @@
 .test:hover{
     color:red;
 }
-
+.carousel{
+    justify-content: center;
+    align-items: center;
+}
+.img:hover{
+    transition:1.5s;
+    transform: scale(1.2);
+}
 @media screen and (max-width:1024px) {
     .experience__container{
         display:grid;

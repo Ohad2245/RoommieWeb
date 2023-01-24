@@ -38,6 +38,20 @@ const items = [
   height="200px"
   width="300px"
 />,
+ <img
+ src="/team.jpg"
+ onDragStart={handleDragStart}
+ role="presentation"
+ height="200px"
+ width="300px"
+/>,
+ <img
+ src="/team2.jpg"
+ onDragStart={handleDragStart}
+ role="presentation"
+ height="200px"
+ width="300px"
+/>,
   
 ];
 

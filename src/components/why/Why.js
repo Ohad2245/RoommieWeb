@@ -64,8 +64,9 @@ const Why = () => {
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[30px] text-[16px] text-center text-secondary-white"
       >
-          <small>Why we exist ? <br></br>To help people who are searching for new apartments and or roommates by<br></br> eliminating the frustration and difficulty they experience in todays real estate market.</small>
+          <small>Why we exist ?</small> 
         </motion.p>
+        <Why2/>
         <br></br>
         <AliceCarousel
           mouseTracking
@@ -79,7 +80,6 @@ const Why = () => {
           autoPlay
         />
       </motion.div>
-      <Why2/>
     </div>
   );
 };

@@ -34,21 +34,17 @@ const data = [
     avatar: "/Yonatan.jpeg",
     name: "Yonatan Yavin",
     title: "Backend Developer",
-    review:
-      "Computer Engineering graduate with strong skills in C, C++, Java, Python. Specializing in embedded systems and software engineering",
+    
   },
   {
     avatar: "/Liat.jpeg",
     name: "Liat Shear",
     title: "Frontend Developer",
-    review: "Computer Science Student",
   },
   {
     avatar: "/Omer.jpeg",
     name: "Omer Dayan",
     title: "Backend Developer",
-    review: `Over the past few years, I've learned a lot about programming in C++ and Python.
-        I carried out interesting projects, I gave programming lessons to students and friends.`,
   },
   {
     avatar: "/Rashi.jpeg",
@@ -69,7 +65,7 @@ function WhoWeAre() {
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
       id="Testimonials"
     >
-      <TypingText title="Who we are" textStyles="text-center" />
+      <TypingText title="Who We Are" textStyles="text-center" />
       <Swiper
         className="container testimonials__container reveal"
         // install Swiper modules

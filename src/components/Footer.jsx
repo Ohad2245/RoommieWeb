@@ -54,7 +54,7 @@ const Footer = () => {
           <div className="e"></div>
         </div>
         </div>            <p className="font-normal text-[14px] text-white opacity-50">
-              Copyright © 2022 - Roommie. All right reserved
+              Copyright © 2022 - Roommie. All Right Reserved
             </p>
             <div>
               {/* <Button className="gap-2">

@@ -1,17 +1,11 @@
-import { Footer } from "../components";
+import  Footer  from "../components/footer/Footer";
 import WhoWeAre from "../components/whoWeAre/WhoWeAre";
 import Contact from "../components/contact/Contact";
 import {
-  
-  // Feedback,
   GetStarted,
   Hero,
-  // Insights,
-  // WhatsNew,
-  // World,
 } from "../screens";
 import Alert from "../components/Alert";
-// import Values2 from "../components/values2/Values2";
 import Navbar from "../components/navbar/Navbar";
 import Values from "../components/values/Values";
 import Why from "../components/why/Why";

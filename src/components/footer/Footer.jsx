@@ -2,14 +2,15 @@
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
 // import { CryptoState } from "../CryptoContext";
-import styles from "../styles";
-import { footerVariants } from "../utils/motion";
-import '../../src/components/navbar/navbar.css';
+import styles from "../../styles";
+import { footerVariants } from "../../utils/motion";
+import '../../../src/components/navbar/navbar.css';
+import './footer.css';
 
 const Footer = () => {
   // const { user } = CryptoState();
   return (
-    <div>
+    <div className="footer2">
     <motion.footer
       variants={footerVariants}
       initial="hidden"
@@ -62,7 +63,7 @@ const Footer = () => {
                   <img src="/twitter-icon.png" width="27" height="20" />
                 </a>
               </Button> */}
-              <Button>
+              <Button className="btn">
                 <a
                   href="https://www.linkedin.com/company/roommie/about/"
                   target="_blank"
@@ -76,7 +77,7 @@ const Footer = () => {
                 </a>
               </Button>
 
-              <Button>
+              <Button className="btn">
                 <a
                   href="https://instagram.com/roommieofficial?igshid=YmMyMTA2M2Y="
                   target="_blank"
@@ -86,7 +87,7 @@ const Footer = () => {
                 </a>
               </Button>
 
-              <Button>
+              <Button className="btn">
                 <a
                   href="https://www.facebook.com/RoommieOfficial/"
                   target="_blank"
@@ -103,6 +104,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="views">
+      <small>This page was viewed</small>
+        <h2 id="count">0</h2>
+        <small>times</small>
+        </div>
     </motion.footer>
     </div>
   );

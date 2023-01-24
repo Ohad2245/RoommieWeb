@@ -15,7 +15,7 @@ const Why2 = () => {
             <article className="experience__details">
               {/* <BsPatchCheckFill className="experience__details-icon" /> */}
               <div className="text-white">
-                <li>Reduce time and energy exerted in searching</li>
+                <li>Save time and energy exerted in searching</li>
               </div>
             </article>
             <article className="experience__details">
@@ -27,13 +27,13 @@ const Why2 = () => {
             <article className="experience__details">
               {/* <BsPatchCheckFill className="experience__details-icon" /> */}
               <div className="text-white">
-                <li>Ease the competition</li>
+                <li>Minimize the gap between what people want vs. what they settle for</li>
               </div>
             </article>
             <article className="experience__details">
               {/* <BsPatchCheckFill className="experience__details-icon" /> */}
               <div className="text-white">
-                <li>Standardize transfer of information between landlord and tennant</li>
+                <li>Standardize transfer of information between landlord and tennant   </li>
               </div>
             </article>
             <article className="experience__details">

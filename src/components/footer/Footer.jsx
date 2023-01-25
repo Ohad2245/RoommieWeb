@@ -63,7 +63,7 @@ const Footer = () => {
                   <img src="/twitter-icon.png" width="27" height="20" />
                 </a>
               </Button> */}
-              <Button className="btn">
+              <Button>
                 <a
                   href="https://www.linkedin.com/company/roommie/about/"
                   target="_blank"

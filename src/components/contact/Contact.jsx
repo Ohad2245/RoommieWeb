@@ -39,7 +39,7 @@ function Contact() {
            >
             <MdOutlineEmail className="contact__options-icon" />
             <h4 className="font-bold">Email</h4>
-            <h5 className="text-neutral-700 email">Roommie@gmail.com</h5>
+            <h5 className="text-neutral-700 email">roommieofficial@gmail.com</h5>
             <div className="interactive">
             <a
               href="mailto:Roommie@gmail.com"

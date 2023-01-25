@@ -15,7 +15,7 @@
 }
 
 .client__avatar{
-    
+
     width:4rem;
     aspect-ratio: 1/1;
     overflow:hidden;
@@ -41,9 +41,9 @@
 }
 .team2{
     display: flex;
-    gap:2rem;
-    
+    gap:1rem;
 }
+
 .client__title{
     color:gray;
     font-weight: 700;

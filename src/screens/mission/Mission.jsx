@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { TypingText } from "../../components/CustomTexts";
 // import { TypingText } from '../components';
 import styles from "../../styles";
 import { fadeIn, staggerContainer } from "../../utils/motion";
@@ -19,8 +20,7 @@ const About = () => (
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[30px] text-[16px] text-center text-secondary-white"
       >
-        {/* <span className="font-extrabold text-white ">Mission Statement</span><br></br> */}
-        <span className="font-extrabold">Mission Statement:</span>
+        <TypingText title="Mission Statement" textStyles="text-center" />
         <br></br>Roommie aims to provide a renewed sense of excitement to people
         searching for new apartments and roommates by gathering information,
         sorting it in the most efficient way, and simplifying time consuming

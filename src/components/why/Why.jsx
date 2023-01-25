@@ -95,12 +95,11 @@ const Why = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`flex-col`}
       >
-        <TypingText title="Why Roommie" textStyles="text-center" />
+        <TypingText title="Why Roommie ? " textStyles="text-center" />
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           className="mt-[8px] font-normal sm:text-[30px] text-[16px] text-center text-secondary-white"
         >
-          <small>Why We Exist ?</small>
         </motion.p>
         <Why2 />
         <br></br>

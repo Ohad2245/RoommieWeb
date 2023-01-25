@@ -15,6 +15,7 @@
 }
 
 .client__avatar{
+    
     width:4rem;
     aspect-ratio: 1/1;
     overflow:hidden;
@@ -22,33 +23,40 @@
     margin:0 auto 1rem;
     border: 0.4rem solid rgba(77,181,255,0.4);
 }
+.whoWeAre .testimonial{
+    display:grid;
+
+}
 
 .testimonial{
-    text-align:center;
+    text-align:left;
     padding: 2rem;
     border-radius: 2rem;
     user-select: none;
+    
 }
 
-.client__review{
-    color: rgba(255,255,255,0.6);
-    font-weight: 300;
-    display: block;
-    width:100%;
-    margin: 0.8 rem auto 0;
+.team .client__name{
+    color:white;   
 }
-.client__name{
-    color:white;
-
+.team2{
+    display: flex;
+    gap:2rem;
+    
 }
 .client__title{
     color:gray;
     font-weight: 700;
-
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet{
     background: #4db5ff;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
 }
 
 /* ================= Media Queries Medium ================= */

@@ -105,9 +105,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="views">
-      <small>This page was viewed</small>
-        <h2 id="count">0</h2>
-        <small>times</small>
+      
         </div>
     </motion.footer>
     </div>

@@ -14,25 +14,24 @@
 }
 
 .contact__option {
-  /* background:#4db5ff; */
-  /* background:#090E7C; */
   background: #5c63f1;
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
   border: 1px solid transparent;
-  transition: all 400ms ease;
+  /* transition: all 400ms ease; */
 }
 
 .contact__option:hover {
-  background: transparent;
   border-radius: rgba(77, 181, 255, 0.4);
 }
 
 .contact__options-icon {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  align-items: center;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
 .contact__option a {
@@ -69,32 +68,31 @@
   opacity: 1;
 }
 
-.contact__option .sendMessage{
-  color:transparent;
+.contact__option .sendMessage {
+  color: transparent;
 }
 
-.interactive{
-  width:100%;
-  height:100%;
+.interactive {
+  width: 100%;
+  height: 100%;
 }
 
-.interactive:hover .sendMessage{
-  display :block;
+.interactive:hover .sendMessage {
+  display: block;
 }
 .contact__option:hover {
   font-size: 0;
 }
-.sendMessage{
-  color:white;
-  
+.sendMessage {
+  color: white;
 }
 
-.contact__option:hover .sendMessage{
+.contact__option:hover .sendMessage {
   font-size: 20px;
   line-height: 28px;
   font-weight: 200;
   text-align: center;
-  color:white;
+  color: white;
   font-weight: 700;
 }
 

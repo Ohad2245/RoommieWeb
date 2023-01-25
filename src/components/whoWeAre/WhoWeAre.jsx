@@ -6,54 +6,8 @@ import { motion } from "framer-motion";
 import { TypingText } from "../CustomTexts";
 import styles from "../../styles";
 import "./whoWeAre.css";
-import { Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-
-const data = [
-  {
-    avatar: "/Eliyahu.jpg",
-    name: "Eliyahu Yifrach",
-    title: "Founder | CEO of Roommie",
-    review: "",
-  },
-  {
-    avatar: "/Yael.jpeg",
-    name: "Yael Gargir",
-    title: "CMO",
-    review: ``,
-  },
-  {
-    avatar: "/Ohad.jpeg",
-    name: "Ohad Cohen",
-    title: "CTO | Fullstack Developer",
-    review: "",
-  },
-  {
-    avatar: "/Yonatan.jpeg",
-    name: "Yonatan Yavin",
-    title: "Backend Developer",
-    
-  },
-  {
-    avatar: "/Liat.jpeg",
-    name: "Liat Shear",
-    title: "Frontend Developer",
-  },
-  {
-    avatar: "/Omer.jpeg",
-    name: "Omer Dayan",
-    title: "Backend Developer",
-  },
-  {
-    avatar: "/Rashi.jpeg",
-    name: "Rashi Pachino",
-    title: "Frontend Developer",
-    review: '',
-  },
-  
-];
 
 function WhoWeAre() {
   return (
@@ -62,29 +16,79 @@ function WhoWeAre() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col whoWeAre`}
       id="Testimonials"
     >
       <TypingText title="Who We Are" textStyles="text-center" />
-      <Swiper
-        className="container testimonials__container reveal"
-        // install Swiper modules
-        modules={[Pagination]}
-        spaceBetween={40}
-        slidesPerView={1}
-        pagination={{ clickable: true }} >
-        {data.map(({ avatar, name,title}, index) => {
-          return (
-            <SwiperSlide key={index} className="testimonial">
-              <div className="client__avatar">
-                <img src={avatar} />
-              </div>
-              <h5 className="client__name">{name}</h5>
-              <small className="client__title">{title}</small>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+      <div className="testimonial">
+        <div className="team">
+        <div className="team2">
+            <div>
+              <img src="Eliyahu.jpg" className="client__avatar" />
+            </div>
+            <div>
+              <p className="client__name">Eliyahu Yifrach</p>
+              <small className="client__title">Founder | CEO of Roommie</small>
+            </div>
+          </div>
+          <div className="team2">
+            <div>
+              <img src="Yael.jpeg" className="client__avatar" />
+            </div>
+            <div>
+              <p className="client__name">Yael Gargir</p>
+              <small className="client__title">CMO of Roommie</small>
+            </div>
+          </div>
+          <div className="team2">
+            <div>
+              <img src="Ohad.jpeg" className="client__avatar" />
+            </div>
+            <div>
+              <p className="client__name">Ohad Cohen</p>
+              <small className="client__title">CTO | Fullstack Developer</small>
+            </div>
+          </div>
+          <div className="team2">
+            <div>
+              <img src="Yonatan.jpeg" className="client__avatar" />
+            </div>
+            <div>
+              <p className="client__name">Yonatan Yavin</p>
+              <small className="client__title">Backend Developer</small>
+            </div>
+          </div>
+          <div className="team2">
+            <div>
+              <img src="Liat.jpeg" className="client__avatar" />
+            </div>
+            <div>
+              <p className="client__name">Liat Shear</p>
+              <small className="client__title">Frontend Developer</small>
+            </div>
+          </div>
+          <div className="team2">
+            <div>
+              <img src="Omer.jpeg" className="client__avatar" />
+            </div>
+            <div>
+              <p className="client__name">Omer Dayan</p>
+              <small className="client__title">Backend Developer</small>
+            </div>
+          </div>
+          <div className="team2">
+            <div>
+              <img src="Rashi.jpeg" className="client__avatar" />
+            </div>
+            <div>
+              <p className="client__name">Rashi Pachino</p>
+              <small className="client__title">Frontend Developer</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ); */}
+      {/* })} */}
     </motion.div>
   );
 }

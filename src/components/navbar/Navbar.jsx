@@ -46,7 +46,7 @@ function Navbar() {
               </div>
 
               <FormControl className="language">
-                <InputLabel className="text-white">Language</InputLabel>
+                <InputLabel className="text-white">{t("Language")}</InputLabel>
                 <Select
                   style={{ width: 80, height: 40 }}
                   labelId="demo-simple-select-label"

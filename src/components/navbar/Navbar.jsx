@@ -4,82 +4,21 @@ import { motion } from "framer-motion";
 import styles from "../../styles";
 import { navVariants } from "../../utils/motion";
 import { Box } from "@mui/system";
-import { Toolbar } from "@mui/material";
-// import { styled, alpha } from "@mui/material/styles";
-// import InputBase from "@mui/material/InputBase";
-// import NavLinks from "../navLinks/NavLinks";
-// import { CryptoState } from "../CryptoContext";
-// import { MdRestaurantMenu } from "react-icons/md";
+import { FormControl, InputLabel, MenuItem } from "@mui/material";
+import Select from "@mui/material/Select";
 import "./navbar.css";
-
-// const Search = styled("div")(({ theme }) => ({
-//   position: "relative",
-//   borderRadius: theme.shape.borderRadius,
-//   // backgroundColor: alpha(theme.palette.common, 0.15),
-//   "&:hover": {
-//     backgroundColor: alpha(theme.palette.common.white, 0.25),
-//   },
-//   marginLeft: 0,
-//   width: "100%",
-//   [theme.breakpoints.up("sm")]: {
-//     marginLeft: theme.spacing(-5),
-//     marginTop: theme.spacing(-3),
-//     width: "auto",
-//   },
-// }));
-
-// const SearchIconWrapper = styled("div")(({ theme }) => ({
-//   padding: theme.spacing(0, 2),
-//   height: "100%",
-//   position: "absolute",
-//   pointerEvents: "none",
-//   display: "flex",
-//   alignItems: "center",
-//   justifyContent: "center",
-//   backgroundColor: "transparent",
-//   color: theme.palette.common.white,
-// }));
-
-// const StyledInputBase = styled(InputBase)(({ theme }) => ({
-//   color: "white",
-//   "& .MuiInputBase-input": {
-//     padding: theme.spacing(1, 1, 1, 0),
-//     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-//     transition: theme.transitions.create("width"),
-//     width: "100%",
-//     [theme.breakpoints.up("sm")]: {
-//       "&:focus": {
-//         width: "20ch",
-//       },
-//     },
-//   },
-// }));
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 function Navbar() {
-  // const {user} = CryptoState();
-  // const [active, setActive] = useState(false);
+  function handleClick(lang) {
+    i18next.changeLanguage(lang);
+  }
 
-  // const humburger = (
-  //   <img
-  //     src="/menu.svg"
-  //     alt="menu"
-  //     className="w-[24px] h-[24px] object-contain"
-  //     onClick={() => setActive(!active)}
-  //   />
-  // );
-
-  // const closeIcon = (
-  //   <MdRestaurantMenu
-  //     size="25px"
-  //     color="white"
-  //     onClick={() => setActive(!active)}
-  //   />
-  // );
+  const { t } = useTranslation();
 
   return (
-
     <div className="navbar_container">
-
       <motion.nav
         variants={navVariants}
         initial="hidden"
@@ -87,62 +26,55 @@ function Navbar() {
         className={`${styles.xPaddings} py-2 relative`}
       >
         <div className="absolute w-[50%] inset-0 gradient-01" />
-        <div
-          className={`${styles.innerWidth} mx-auto justify-between gap-8`}
-        >
-          <Box className="w-[24px] h-[24px] object-contain">
-            <Toolbar>
-              {/* <Search>
-                <SearchIconWrapper>
-                  <img
-                    src="/search.svg"
-                    alt="search"
-                    className="w-[24px] h-[24px] object-contain "
-                  />
-                </SearchIconWrapper>
-                <StyledInputBase
-                  placeholder="Search…"
-                  inputProps={{ "aria-label": "search" }}
-                />
-              </Search> */}
-            </Toolbar>
-          </Box>
+        <div className={`${styles.innerWidth} mx-auto justify-between gap-8`}>
+          <Box className="w-[24px] h-[24px] object-contain"></Box>
 
-          {/* <h2 className="font-thin text-[24px] leading-[30px] text-white text-center">
-          R O O M M I
-        </h2> */}
-        <a href="#">
-          <div className="roommie font-thin text-[24px] leading-[30px] text-white"> 
-            <p>R</p>
-            <p>O</p>
-            <p>O</p>
-            <p>M</p>
-            <p>M</p>
-            <p>I</p>
 
-            <div className="title grid gap-1 md:gap-1">
-              <div className="e"></div>
-              <div className="e"></div>
-              <div className="e"></div>
+          <a href="#">
+            <div className="roommie font-thin text-[24px] leading-[30px] text-white">
+              <p>R</p>
+              <p>O</p>
+              <p>O</p>
+              <p>M</p>
+              <p>M</p>
+              <p>I</p>
+
+              <div className="title grid gap-1 md:gap-1">
+                <div className="e"></div>
+                <div className="e"></div>
+                <div className="e"></div>
+              </div>
+
+              <FormControl className="language">
+                <InputLabel className="text-white">Language</InputLabel>
+                <Select
+                  style={{ width: 110, height: 40 }}
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  onChange={(e) => handleClick(e.target.value)}
+                  label="Language"
+                  className="text-white"
+                >
+                  <MenuItem value={"en"}>English</MenuItem>
+                  <MenuItem value={"he"}>Hebrew</MenuItem>
+                </Select>
+              </FormControl>
+
             </div>
-            
-          </div>
-</a>
-          {/* {active ? closeIcon : humburger} */}
-          {/* {active && <NavLinks />} */}
-          {/* {user ? <UserSideBar/> : <AuthModal/>} */}
+          </a>
         </div>
+        <div></div>
       </motion.nav>
+
       <div>
         <nav className="text-white gap-10 text-center items-start">
-            <a href="#Mission">Mission</a>
-            <a href="#Testimonials">Who We Are</a>
-            <a href="#Why">Why</a>
-            <a href="#Values">Values</a>
-            <a href="#Contact">Contact Us </a>
+          <a href="#Mission">{t("Mission")}</a>
+          <a href="#Testimonials">{t("Who We Are")}</a>
+          <a href="#Why">{t("Why")}</a>
+          <a href="#Values">{t("Values")}</a>
+          <a href="#Contact">{t("Contact Us")} </a>
         </nav>
       </div>
-      
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import Hero from './Hero';
 import Mission from './mission/Mission';
 import Explore from './Explore';
-import GetStarted from './GetStarted';
+import HowRoommieWorks from './HowRoommieWorks';
 import WhatsNew from './WhatsNew';
 import World from './World';
 import Insights from './Insights';
@@ -11,7 +11,7 @@ export {
   Hero,
   Mission,
   Explore,
-  GetStarted,
+  HowRoommieWorks,
   WhatsNew,
   World,
   Insights,

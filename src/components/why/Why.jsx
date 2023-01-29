@@ -6,6 +6,7 @@ import { TypingText } from "../CustomTexts";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import Why2 from "./Why2";
 import "./why2.css";
+import { useTranslation } from "react-i18next";
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -75,6 +76,7 @@ const items = [
 ];
 
 const Why = () => {
+  const {t} = useTranslation();
   const responsive = {
     600: {
       items: 2,
@@ -95,7 +97,7 @@ const Why = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`flex-col`}
       >
-        <TypingText title="Why Roommie ? " textStyles="text-center" />
+        <TypingText title={t("Why Roommie ?")} textStyles="text-center" />
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           className="mt-[8px] font-normal sm:text-[30px] text-[16px] text-center text-secondary-white"

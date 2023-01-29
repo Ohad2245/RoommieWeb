@@ -5,8 +5,11 @@ import styles from '../styles';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 import { startingFeatures } from '../constants';
 import '../components/contact/contact.css';
+import { useTranslation } from 'react-i18next';
 
-const GetStarted = () => {
+const HowRoommieWorks = () => {
+  const { t } = useTranslation();
+
   function reveal() {
     const reveals = document.querySelectorAll(".reveal");
     // const reveals = this.myRef.current;
@@ -48,7 +51,7 @@ return(
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="How Roommie Works" />
+        <TypingText title={t("How")} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px] reveal">
           {startingFeatures.map((feature, index) => (
             <StartSteps
@@ -64,4 +67,4 @@ return(
   </section>
 )};
 
-export default GetStarted;
+export default HowRoommieWorks;

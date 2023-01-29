@@ -32,6 +32,9 @@
   gap: 5px;
   align-items: left;
 }
+.roommie .language{
+  margin-left:auto;
+}
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
 * {

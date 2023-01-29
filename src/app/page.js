@@ -2,7 +2,7 @@ import  Footer  from "../components/footer/Footer";
 import WhoWeAre from "../components/whoWeAre/WhoWeAre";
 import Contact from "../components/contact/Contact";
 import {
-  GetStarted,
+  HowRoommieWorks,
   Hero,
 } from "../screens";
 import Alert from "../components/Alert";
@@ -26,7 +26,7 @@ const Page = () => (
       {/* <Explore /> */}
     </div>
     <div className="relative">
-      <GetStarted />
+      <HowRoommieWorks />
       <div className="gradient-04 z-0" />
       {/* <WhatsNew /> */}
     </div>

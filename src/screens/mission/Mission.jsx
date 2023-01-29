@@ -1,11 +1,15 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { TypingText } from "../../components/CustomTexts";
-// import { TypingText } from '../components';
 import styles from "../../styles";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import './mission.css';
 
-const About = () => (
+function About() {
+  const { t} = useTranslation();
+
+  
+  return(
   <section className={`${styles.paddings} relative z-10`}>
     <div className="gradient-02 z-0" />
     <motion.div
@@ -16,15 +20,13 @@ const About = () => (
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
       id="Mission"
     >
+           
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[30px] text-[16px] text-center text-secondary-white"
       >
-        <TypingText title="Mission Statement" textStyles="text-center" />
-        <br></br>Roommie aims to provide a renewed sense of excitement to people
-        searching for new apartments and roommates by gathering information,
-        sorting it in the most efficient way, and simplifying time consuming
-        processes.
+        <TypingText title={t("Mission Statement")} textStyles="text-center" />
+        <br></br>{t("About")}
       </motion.p>
       <motion.img
         variants={fadeIn("up", "tween", 0.3, 1)}
@@ -48,6 +50,7 @@ const About = () => (
       </div>
     </motion.div>
   </section>
-);
+  )
+};
 
 export default About;

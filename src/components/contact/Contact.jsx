@@ -37,7 +37,7 @@ function Contact() {
               rel="noreferrer"
               className="sendMessage"
             >
-              Send Email
+              {t("Send Email")}
             </a>
             </div>
           </article>
@@ -54,7 +54,7 @@ function Contact() {
               rel="noreferrer"
               className="font-bold sendMessage"
             >
-              Send a Message
+              {t("Send Message")}
             </a>
             </div>
           </article>

@@ -3,7 +3,6 @@ import { TypingText, StartSteps } from '../components';
 
 import styles from '../styles';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-import { startingFeatures } from '../constants';
 import '../components/contact/contact.css';
 import { useTranslation } from 'react-i18next';
 
@@ -53,14 +52,8 @@ return(
       >
         <TypingText title={t("How")} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px] reveal">
-          {startingFeatures.map((feature, index) => (
-            <StartSteps
-              key={feature}
-              number={index + 1}
-              text={feature}
+            <StartSteps/>
               
-            />
-          ))}
         </div>
       </motion.div>
     </motion.div>

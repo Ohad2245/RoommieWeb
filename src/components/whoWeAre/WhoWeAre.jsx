@@ -8,8 +8,11 @@ import styles from "../../styles";
 import "./whoWeAre.css";
 import "swiper/css";
 import "swiper/css/pagination";
+import { useTranslation } from "react-i18next";
 
 function WhoWeAre() {
+  const {t} = useTranslation();
+
   return (
     <motion.div
       variants={staggerContainer}
@@ -19,7 +22,7 @@ function WhoWeAre() {
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col whoWeAre`}
       id="Testimonials"
     >
-      <TypingText title="Who We Are" textStyles="text-center" />
+      <TypingText title={t("Who We Are")} textStyles="text-center" />
       <div className="testimonial">
         <div className="team">
         <div className="team2">

@@ -19,25 +19,7 @@ const Footer = () => {
     >
       <div className="footer-gradient" />
       <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
-        {/* <div className="flex items-center justify-between flex-wrap gap-5">
-          <h4 className="font-light md:text-[50px] text-[50px] text-white">
-            Download The App
-          </h4>
-            <button
-              type="button"
-              className="flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px]"
-            >
-              <img
-                src="/headset.svg"
-                alt="headset"
-                className="w-[24px] h-[24px] object-contain"
-              />
-              <span className="font-normal text-[16px] text-white">
-                Enter Roommie
-              </span>
-            </button>
-
-        </div> */}
+       
         <div className="flex flex-col">
           <div className="mb-[50px] h-[2px] bg-white opacity-10" />
           <div className="flex items-center justify-between flex-wrap gap-4">
@@ -55,7 +37,7 @@ const Footer = () => {
           <div className="e"></div>
         </div>
         </div>            <p className="font-normal text-[14px] text-white opacity-50">
-              Copyright © 2022 - Roommie. All Right Reserved
+              Copyright © 2022 - Roommie. All right reserved
             </p>
             <div>
               {/* <Button className="gap-2">

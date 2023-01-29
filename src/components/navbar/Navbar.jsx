@@ -48,16 +48,16 @@ function Navbar() {
               <FormControl className="language">
                 <InputLabel className="text-white">Language</InputLabel>
                 <Select
-                  style={{ width: 110, height: 40 }}
+                  style={{ width: 80, height: 40 }}
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
                   onChange={(e) => handleClick(e.target.value)}
                   label="Language"
                   className="text-white"
                 >
-                  <MenuItem value={"en"}>English</MenuItem>
-                  <MenuItem value={"he"}>Hebrew</MenuItem>
-                </Select>
+                  <MenuItem value={"en"}> <img src="https://flagcdn.com/us.svg" width="35" alt=''/>  </MenuItem>
+                  <MenuItem value={"he"}> <img src="https://flagcdn.com/il.svg" width="35" alt='Israel'/> </MenuItem>
+               </Select>
               </FormControl>
 
             </div>

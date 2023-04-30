@@ -1,7 +1,7 @@
 import { onAuthStateChanged } from "firebase/auth";
 import { useEffect } from "react";
 import { createContext, useContext, useState } from "react";
-import { auth } from "./firebase-config";
+import { auth } from './firebase';
 
 const Crypto = createContext();
 

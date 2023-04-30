@@ -1,12 +1,12 @@
-import { motion } from 'framer-motion';
-import { TypingText, StartSteps } from '../components';
+import { motion } from "framer-motion";
+import { TypingText, StartSteps } from "../components";
+import styles from "../styles";
+import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
+import "../components/contact/contact.css";
+import { useTranslation } from "react-i18next";
+import StartStepsHe from "../components/startSteps/StartStepsHe";
 
-import styles from '../styles';
-import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-import '../components/contact/contact.css';
-import { useTranslation } from 'react-i18next';
-
-const HowRoommieWorks = () => {
+const HowRoommieWorks = ({Languages}) => {
   const { t } = useTranslation();
 
   function reveal() {
@@ -27,37 +27,39 @@ const HowRoommieWorks = () => {
   }
 
   window.addEventListener("scroll", reveal);
-return(
-  <section className={`${styles.paddings} relative z-10`}>
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: 'false', amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
-    >
+  return (
+    <section className={`${styles.paddings} relative z-10`}>
       <motion.div
-        variants={planetVariants('left')}
-        className={`flex-1 ${styles.flexCenter}`}
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: "false", amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
       >
-        <img
-          src="/4fc2ba69-2011-4876-8178-28731ed094e7.png"
-          alt="get-started"
-          className="w-[70%] h-[70%] object-contain"
-        />
+     
+        <motion.div
+          variants={planetVariants("left")}
+          className={`flex-1 ${styles.flexCenter}`}
+        >
+          <img
+            src="/4fc2ba69-2011-4876-8178-28731ed094e7.png"
+            alt="get-started"
+            className="w-[70%] h-[70%] object-contain"
+          />
+        </motion.div>
+       
+        <motion.div
+          variants={fadeIn("left", "tween", 0.2, 1)}
+          className="flex-[0.75] flex justify-center flex-col"
+        >
+          <TypingText title={t("How")} />
+          <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px] reveal">
+          {Languages === 'en' ? <StartStepsHe/> : <StartSteps/>}
+          </div>
+        </motion.div>
       </motion.div>
-      <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] flex justify-center flex-col"
-      >
-        <TypingText title={t("How")} />
-        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px] reveal">
-            <StartSteps/>
-              
-        </div>
-      </motion.div>
-    </motion.div>
-  </section>
-)};
+    </section>
+  );
+};
 
 export default HowRoommieWorks;

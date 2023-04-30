@@ -11,7 +11,7 @@ import Values from "../components/values/Values";
 import Why from "../components/why/Why";
 import Mission from '../screens/mission/Mission';
 
-const Page = () => (
+const Page = ({Languages}) => (
   <div className="bg-primary-black overflow-hidden">
         <div className="gradient-03 z-0" />
     <Navbar />
@@ -21,12 +21,12 @@ const Page = () => (
     <br></br>
     <Hero />
     <div className="relative">
-      <Mission/>
+      {/* <Mission/> */}
       <div className="gradient-03 z-0" />
       {/* <Explore /> */}
     </div>
     <div className="relative">
-      <HowRoommieWorks />
+      {/* <HowRoommieWorks Languages={Languages}/> */}
       <div className="gradient-04 z-0" />
       {/* <WhatsNew /> */}
     </div>
@@ -37,10 +37,10 @@ const Page = () => (
       {/* <Feedback /> */}
     </div>
     <div className="relative">
-      <WhoWeAre/>
+      {/* <WhoWeAre/> */}
     </div>
-    <Why/>
-    <Values />
+    {/* <Why/>
+    <Values /> */}
     <Contact />
     <Footer />
     <Alert />

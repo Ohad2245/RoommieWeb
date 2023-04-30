@@ -1,6 +1,6 @@
-import styles from '../styles';
-import '../components/contact/contact.css';
-import { useTranslation } from 'react-i18next';
+import styles from "../../styles";
+import "../../components/contact/contact.css";
+import { useTranslation } from "react-i18next";
 
 const StartSteps = () => {
   const {t} = useTranslation();

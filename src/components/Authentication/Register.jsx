@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import React from "react";
 import { useState } from "react";
 import { CryptoState } from "../../CryptoContext";
-import { auth } from "../../firebase-config";
+import { auth } from "../../firebase";
 
 function Register({ handleClose }) {
   const [email, setEmail] = useState("");

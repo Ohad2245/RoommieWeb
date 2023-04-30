@@ -27,12 +27,6 @@ export const exploreWorlds = [
   },
 ];
 
-export const startingFeatures = [
-  "Create a profile and tell us what you're looking for",
-  "Filter and sort the relevant results the way that suits you",
-  "Set up times to see apartments in a convenient order",
-];
-
 export const newFeatures = [
   {
     imgUrl: '/vrpano.svg',

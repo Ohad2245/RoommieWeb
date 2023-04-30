@@ -9,6 +9,9 @@ import Select from "@mui/material/Select";
 import "./navbar.css";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+import AuthModal from '../../components/Authentication/AuthModal';
+import { CryptoState } from "../../CryptoContext";
+import UserSideBar from "../Authentication/UserSideBar";
 
 function Navbar() {
   function handleClick(lang) {
@@ -17,6 +20,7 @@ function Navbar() {
 
   const { t } = useTranslation();
 
+  const {user} = CryptoState();
   return (
     <div className="navbar_container">
       <motion.nav
@@ -28,8 +32,6 @@ function Navbar() {
         <div className="absolute w-[50%] inset-0 gradient-01" />
         <div className={`${styles.innerWidth} mx-auto justify-between gap-8`}>
           <Box className="w-[24px] h-[24px] object-contain"></Box>
-
-
           <a href="#">
             <div className="roommie font-thin text-[24px] leading-[30px] text-white">
               <p>R</p>
@@ -48,7 +50,7 @@ function Navbar() {
               <FormControl className="language">
                 <InputLabel className="text-white">{t("Language")}</InputLabel>
                 <Select
-                  style={{ width: 80, height: 40 }}
+                  style={{ width: 100, height: 40 }}
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
                   onChange={(e) => handleClick(e.target.value)}
@@ -58,9 +60,12 @@ function Navbar() {
                   <MenuItem value={"en"}> <img src="https://flagcdn.com/us.svg" width="35" alt=''/>  </MenuItem>
                   <MenuItem value={"he"}> <img src="https://flagcdn.com/il.svg" width="35" alt='Israel'/> </MenuItem>
                </Select>
+
               </FormControl>
+              {user ? <UserSideBar/> : <AuthModal/>}
 
             </div>
+           
           </a>
         </div>
         <div></div>

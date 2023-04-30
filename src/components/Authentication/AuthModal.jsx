@@ -10,8 +10,8 @@ import Register from "./Register";
 import Login from "./Login";
 import GoogleButton from "react-google-button";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { auth } from "../../firebase-config";
 import { CryptoState } from "../../CryptoContext";
+import { auth } from "../../firebase";
 
 const useStyles = makeStyles((theme) => ({
   modal: {

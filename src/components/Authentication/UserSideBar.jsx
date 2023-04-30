@@ -5,7 +5,7 @@ import { CryptoState } from "../../CryptoContext";
 import { Avatar } from "@mui/material";
 import { makeStyles } from "@material-ui/core/styles";
 import { signOut } from "firebase/auth";
-import { auth } from "../../firebase-config";
+import { auth } from "../../firebase";
 
 const useStyles = makeStyles({
   container: {

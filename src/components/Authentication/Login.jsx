@@ -1,10 +1,10 @@
 import { Button, TextField } from "@mui/material";
 import { Box } from "@mui/system";
-import { signInWithEmailAndPassword } from "firebase/auth";
 import React from "react";
 import { useState } from "react";
 import { CryptoState } from "../../CryptoContext";
-import { auth } from "../../firebase-config";
+import { auth } from "../../firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 function Login({ handleClose }) {
   const [email, setEmail] = useState("");

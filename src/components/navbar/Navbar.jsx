@@ -34,22 +34,12 @@ function Navbar() {
           <Box className="w-[24px] h-[24px] object-contain"></Box>
           <a href="#">
             <div className="roommie font-thin text-[24px] leading-[30px] text-white">
-              <p>R</p>
-              <p>O</p>
-              <p>O</p>
-              <p>M</p>
-              <p>M</p>
-              <p>I</p>
+            <img src="/logo2.png" alt="logo" className="text-white w-[180px] h-[30px]"/>
 
-              <div className="title grid gap-1 md:gap-1">
-                <div className="e"></div>
-                <div className="e"></div>
-                <div className="e"></div>
-              </div>
-
+            
               <FormControl className="language">
                 <InputLabel className="text-white">{t("Language")}</InputLabel>
-                <Select
+                {/* <Select
                   style={{ width: 100, height: 40 }}
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
@@ -59,7 +49,7 @@ function Navbar() {
                 >
                   <MenuItem value={"en"}> <img src="https://flagcdn.com/us.svg" width="35" alt=''/>  </MenuItem>
                   <MenuItem value={"he"}> <img src="https://flagcdn.com/il.svg" width="35" alt='Israel'/> </MenuItem>
-               </Select>
+               </Select> */}
 
               </FormControl>
               {user ? <UserSideBar/> : <AuthModal/>}
@@ -68,7 +58,9 @@ function Navbar() {
            
           </a>
         </div>
-        <div></div>
+        <div>
+
+        </div>
       </motion.nav>
 
       <div>

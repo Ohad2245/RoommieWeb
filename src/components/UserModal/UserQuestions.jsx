@@ -1,63 +1,52 @@
-import React, { useState, useEffect } from 'react';
-import { TextField, Button } from '@mui/material';
-import firebase from 'firebase/app';
-import 'firebase/firestore';
+import { useState } from "react";
+import { TextField, Button } from "@mui/material";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../firebase";
+import { CryptoState } from "../../CryptoContext";
 
-function UserQuestions({ firebase }) {
-  const [question, setQuestion] = useState('');
-  const [answer, setAnswer] = useState('');
-  const [questions, setQuestions] = useState([]);
+function UserQuestions({handleClose}) {
+  const [question, setQuestion] = useState("");
+  const [answer, setAnswer] = useState("");
 
-  useEffect(() => {
-    const fetchQuestions = async () => {
-      const questionsRef = firebase.firestore().collection('questions');
-      const snapshot = await questionsRef.get();
-      const questionsData = snapshot.docs.map(doc => doc.data());
-      setQuestions(questionsData);
-    };
-    fetchQuestions();
-  }, [firebase]);
+const {setAlert} = CryptoState();
 
-  const handleQuestionChange = (event) => {
-    setQuestion(event.target.value);
-  }
-
-  const handleAnswerChange = (event) => {
-    setAnswer(event.target.value);
-  }
-
-  const handleAddQuestion = () => {
-    if (question && answer) {
-      firebase.firestore().collection('questions').add({
+    const handleAddQuestion = async () => {
+      const questionObj = {
         question: question,
-        answer: answer
-      });
-      setQuestion('');
-      setAnswer('');
-    }
-  }
+        answer: answer,
+      };
+      try {
+        await addDoc(collection(db, "questions"), questionObj);
+        setQuestion("");
+        setAnswer("");
+        setAlert({
+          open: true,
+          message: `The question has been sent, will be confirmed by the manager soon          `,
+          type: "success",
+        });
+        handleClose()
+      } catch (error) {
+        console.error("Error adding question: ", error);
+      }
+    };
 
+    
+  
   return (
     <div className="flex flex-col gap-4">
       <TextField
         label="Question"
         value={question}
-        onChange={handleQuestionChange}
+        onChange={(event) => setQuestion(event.target.value)}
       />
       <TextField
         label="Answer"
         value={answer}
-        onChange={handleAnswerChange}
+        onChange={(event) => setAnswer(event.target.value)}
       />
-      <Button variant="contained" onClick={handleAddQuestion}>Submit</Button>
-      <ul>
-        {questions.map((q, index) => (
-          <li key={index}>
-            <h3>{q.question}</h3>
-            <p>{q.answer}</p>
-          </li>
-        ))}
-      </ul>
+      <Button variant="contained" onClick={handleAddQuestion} >
+        Submit
+      </Button>
     </div>
   );
 }

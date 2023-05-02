@@ -4,12 +4,15 @@ import Contact from "../components/contact/Contact";
 import {
   HowRoommieWorks,
   Hero,
+  Explore,
+  WhatsNew,
+  Insights,
+  Feedback,
 } from "../screens";
 import Alert from "../components/Alert";
 import Navbar from "../components/navbar/Navbar";
 import Values from "../components/values/Values";
 import Why from "../components/why/Why";
-import Mission from '../screens/mission/Mission';
 
 const Page = ({Languages}) => (
   <div className="bg-primary-black overflow-hidden">
@@ -21,26 +24,17 @@ const Page = ({Languages}) => (
     <br></br>
     <Hero />
     <div className="relative">
-      {/* <Mission/> */}
       <div className="gradient-03 z-0" />
-      {/* <Explore /> */}
     </div>
     <div className="relative">
-      {/* <HowRoommieWorks Languages={Languages}/> */}
       <div className="gradient-04 z-0" />
-      {/* <WhatsNew /> */}
     </div>
-    {/* <World /> */}
     <div className="relative">
-      {/* <Insights /> */}
       <div className="gradient-04 z-0" />
-      {/* <Feedback /> */}
     </div>
     <div className="relative">
-      {/* <WhoWeAre/> */}
     </div>
-    {/* <Why/>
-    <Values /> */}
+    <Values />
     <Contact />
     <Footer />
     <Alert />

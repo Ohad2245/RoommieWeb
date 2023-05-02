@@ -23,31 +23,17 @@ const Footer = () => {
             <div className="mb-[50px] h-[2px] bg-white opacity-10" />
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div className="roommie font-thin text-[24px] leading-[30px] text-white text-center footer ">
-                <p>R</p>
-                <p>O</p>
-                <p>O</p>
-                <p>M</p>
-                <p>M</p>
-                <p>I</p>
+              <img src="/logo2.png" alt="logo" className="text-white w-[180px] h-[30px]"/>
 
-                <div className="title grid gap-1 md:gap-1">
-                  <div className="e"></div>
-                  <div className="e"></div>
-                  <div className="e"></div>
-                </div>
               </div>{" "}
               <p className="font-normal text-[14px] text-white opacity-50">
-                Copyright © 2022 - Roommie. All right reserved
+                Copyright © 2023 - Ohad. All right reserved
               </p>
               <div>
-                {/* <Button className="gap-2">
-                <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                  <img src="/twitter-icon.png" width="27" height="20" />
-                </a>
-              </Button> */}
+               
                 <Button>
                   <a
-                    href="https://www.linkedin.com/company/roommie/about/"
+                    href="https://www.linkedin.com/in/ohadcohen90/"
                     target="_blank"
                     rel="noreferrer"
                   >

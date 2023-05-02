@@ -48,7 +48,7 @@ export default function UserModal() {
               Add Your Questions
             </Typography>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              <UserQuestions />
+              <UserQuestions handleClose={handleClose}/>
             </Typography>
           </Box>
         ) : (

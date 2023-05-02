@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import "../App.css";
 import React from "react";
 import FAQ from '../components/FAQ/FAQ.js';
@@ -6,14 +6,17 @@ import img from "../assets/scroll/1.jpg";
 import Pagination from '../components/pagination/Pagination';
 import { GoPrimitiveDot } from "react-icons/go";
 import { useTranslation } from "react-i18next";
-
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase";
 
 function QA() {
   const {t} = useTranslation();
 
+  const[test,setTest] = useState([]);
+
   const [faqs, setFaqs] = useState([
     {
-      question: <p>{t("What is React?")}</p>,
+      question: "What is React?",
       answer:
         "React(aka React.js or ReactJS) is an open-source front-end JavaScript library that is used for building composable user interfaces, especially for single-page applications. It is used for handling view layer for web and mobile apps based on components in a declarative approach.React was created by Jordan Walke, a software engineer working for Facebook. React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012..",
       open: false,
@@ -292,6 +295,19 @@ function QA() {
     );
   };
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getDocs(collection(db, "questions"));
+      const faqsData = data.docs.map((doc) => ({
+        question: doc.data().question,
+        answer: doc.data().answer,
+        open: false,
+      }));
+      setTest(faqsData);
+    };
+    fetchData();
+  }, []);
+
   return (
     <div>
       <div className="faqs text-center  ">
@@ -305,6 +321,7 @@ function QA() {
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
       />
+      
     </div>
   );
 }

@@ -4,7 +4,6 @@ import styles from "../styles";
 import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
 import "../components/contact/contact.css";
 import { useTranslation } from "react-i18next";
-import StartStepsHe from "../components/startSteps/StartStepsHe";
 
 const HowRoommieWorks = ({Languages}) => {
   const { t } = useTranslation();
@@ -54,7 +53,6 @@ const HowRoommieWorks = ({Languages}) => {
         >
           <TypingText title={t("How")} />
           <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px] reveal">
-          {Languages === 'en' ? <StartStepsHe/> : <StartSteps/>}
           </div>
         </motion.div>
       </motion.div>

@@ -8,4 +8,10 @@ const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp);
 const db = getFirestore(firebaseApp);
 
+
+console.log(firebaseApp);
+console.log(auth);
+console.log(db);
+
+
 export {auth,db};
